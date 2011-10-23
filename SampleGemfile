@@ -1,0 +1,68 @@
+gem 'carrierwave'
+gem 'clearance'
+gem 'compass', "~> 0.12.alpha.0"
+gem 'fog'
+gem 'friendly_id', '~> 4.0.0.beta8'
+gem 'geokit'
+gem 'haml-rails'
+gem 'httparty'
+gem 'informal'
+gem 'jquery-rails'
+gem 'kaminari'
+gem 'koala', '~> 1.2.0beta4'
+gem 'mini_magick'
+gem 'pg'
+gem 'rails'
+gem 'responders'
+gem 'sass-rails'
+gem 'simple_form'
+gem 'sprockets'
+gem 'state_machine'
+gem 'sunlight'
+gem 'thin-rails'
+gem 'timeline_fu', git: 'git://github.com/jamesgolick/timeline_fu.git'
+gem 'twitter'
+gem 'uglifier'
+
+group :test do
+  gem 'capybara'
+  gem 'capybara-firebug', require: "capybara/firebug"
+  gem 'headless', require: false
+  gem "remarkable_activerecord", "~> 4.0.0.alpha4", require: false
+  gem 'selenium-webdriver', '2.8.0'
+  gem 'therubyracer', require: false
+  gem 'timecop'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'with_model'
+end
+
+group :development do
+  gem 'growl_notify', require: false
+  gem 'guard', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-jslint-on-rails', require: false
+  gem 'guard-livereload', require: false
+  gem 'guard-rspec', require: false
+  gem 'guard-spork', require: false
+  gem 'heroku'
+  gem 'kumade'
+  gem 'license_finder', require: false, git: "git://github.com/pivotal/LicenseFinder.git"
+  gem 'lobot', require: false
+  gem 'rb-fsevent', require: false
+  gem 'ruby-debug19', require: false
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'fixture_builder'
+  gem 'jslint_on_rails'
+  gem 'rspec-rails'
+  gem 'valid_attribute'
+  gem "spork", "~> 0.9.0.rc9", require: false
+end
+
+group :production, :staging do
+  gem 'newrelic_rpm'
+end
