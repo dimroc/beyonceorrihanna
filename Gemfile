@@ -8,18 +8,20 @@ gem 'clearance'
 gem 'haml-rails'
 gem 'batman-rails'
 gem 'bourbon'
-gem 'grape', '~> 0.1.5'
 gem 'sprockets'
+gem 'simple_form'
 
 gem 'sqlite3'
 gem 'pg'
 
+gem 'sass-rails',   '~> 3.1.4'
+gem 'coffee-rails', '~> 3.1.1'
+gem 'uglifier', '>= 1.0.3'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+
 end
 
 gem 'jquery-rails'
@@ -51,14 +53,19 @@ group :development do
   gem 'heroku'
   gem 'kumade'
   gem 'ruby-debug19', require: true
+  gem 'rails_best_practices'
 end
 
 group :development, :test do
-  #gem 'factory_girl_rails'
-  #gem 'fixture_builder'
+  gem 'fixture_builder'
+  gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'jslint_on_rails'
+  gem 'rspec'
   gem 'rspec-rails'
+  gem "remarkable_activerecord", "~> 4.0.0.alpha4", require: false
+  gem 'valid_attribute'
+  gem 'wirble'
 end
 
 group :production, :staging do

@@ -1,0 +1,11 @@
+---
+rihanna:
+  id: 7
+  name: Rihanna
+  created_at: 2011-11-05 21:12:19.420957000Z
+  updated_at: 2011-11-05 21:12:19.420957000Z
+beyonce:
+  id: 8
+  name: Beyonce
+  created_at: 2011-11-05 21:12:19.440591000Z
+  updated_at: 2011-11-05 21:12:19.440591000Z
