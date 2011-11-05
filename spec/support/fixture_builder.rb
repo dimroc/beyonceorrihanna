@@ -1,9 +1,3 @@
-require 'ffaker'
-
-Dir[Rails.root.join("spec/factories/*.rb")].each do |f|
-  require "#{f}"
-end
-
 FixtureBuilder::Configuration.class_eval do
   def rebuild_fixtures?
     (@file_hashes != read_config) || Dir.glob('spec/fixtures/**/*.yml').empty?

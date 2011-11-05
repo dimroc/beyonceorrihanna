@@ -3,12 +3,11 @@ window.Beyonceorrihanna = class Beyonceorrihanna extends Batman.App
   # @root 'controller#all'
   # @route '/controller/:id', 'controller#show', resource: 'model', action: 'show'
 
-  @run ->
-    console.log "Running..."
-    true
+  @on 'run', ->
+    console?.log "Running ...."
 
-  @ready ->
-    console.log "Beyonceorrihanna ready for use."
+  @on 'ready', ->
+    console?.log "Beyonceorrihanna ready for use."
 
   @flash: Batman()
   @flash.accessor
