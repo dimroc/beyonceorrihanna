@@ -12,5 +12,7 @@ FixtureBuilder.configure do |config|
   config.factory do
     Factory(:character, name: "Rihanna")
     Factory(:character, name: "Beyonce")
+
+    Factory(:user, password: "test")
   end
 end

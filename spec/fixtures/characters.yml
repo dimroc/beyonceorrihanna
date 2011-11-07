@@ -1,11 +1,11 @@
 ---
 rihanna:
-  id: 13
+  id: 23
   name: Rihanna
-  created_at: 2011-11-05 23:40:32.944133000Z
-  updated_at: 2011-11-05 23:40:32.944133000Z
+  created_at: 2011-11-07 04:37:05.619107000Z
+  updated_at: 2011-11-07 04:37:05.619107000Z
 beyonce:
-  id: 14
+  id: 24
   name: Beyonce
-  created_at: 2011-11-05 23:40:32.965924000Z
-  updated_at: 2011-11-05 23:40:32.965924000Z
+  created_at: 2011-11-07 04:37:05.668384000Z
+  updated_at: 2011-11-07 04:37:05.668384000Z

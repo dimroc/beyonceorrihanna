@@ -40,6 +40,9 @@ Beyonceorrihanna::Application.routes.draw do
   #   end
 
   # Sample resource route within a namespace:
+  namespace :admin do
+    resources :rivals
+  end
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
