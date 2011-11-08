@@ -9,6 +9,7 @@ gem 'jquery-rails'
 
 gem 'clearance'
 gem 'batman-rails'
+gem 'compass', '~>0.12.alpha.0'
 gem 'bourbon'
 gem 'simple_form'
 
