@@ -7,17 +7,16 @@
     /[if lt IE 8]
       -#= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = csrf_meta_tag
-  %body.bp
+  %body.bp{class: [@_controller.controller_name, @_controller.action_name] }
     .header
       - if signed_in?
         = link_to "Sign out", sign_out_path, method: :delete
       - else
         = link_to "Sign in", sign_in_path
 
-    .flash
-      - flash.each do |key, value|
-        %div{class: "flash_#{key}"}
-          = value
+    - flash.each do |key, value|
+      %div{class: ["flash", key].join(" ")}
+        = value
 
     #container
       = yield
