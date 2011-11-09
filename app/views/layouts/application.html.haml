@@ -3,9 +3,6 @@
   %head
     %title Beyonce or Rihanna
     = stylesheet_link_tag 'application.css', :media => 'screen, projection'
-    -#= stylesheet_link_tag 'compiled/print.css', :media => 'print'
-    /[if lt IE 8]
-      -#= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = csrf_meta_tag
   %body.bp{class: [@_controller.controller_name, @_controller.action_name] }
     .header

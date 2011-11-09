@@ -1,8 +1,7 @@
-@import "bourbon";
-
 section {
   font-family: Arial;
   > p {
+    @include float-left;
     color: red;
   }
 }
