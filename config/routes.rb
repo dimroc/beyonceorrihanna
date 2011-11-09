@@ -2,6 +2,8 @@ Beyonceorrihanna::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  match 'sign_out' => 'clearance/sessions#destroy'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -42,6 +44,7 @@ Beyonceorrihanna::Application.routes.draw do
   # Sample resource route within a namespace:
   namespace :admin do
     resources :rivals
+    resources :characters
   end
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController

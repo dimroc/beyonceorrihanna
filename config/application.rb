@@ -44,8 +44,12 @@ module Beyonceorrihanna
     config.filter_parameters += [:password]
 
     config.generators do |g|
-      #g.template_engine :haml
       # you can also specify a different test framework or ORM here
+      g.assets false  # prevent generation of assets when using rails g
+      g.helper false # prevent generation of helpers and helper specs when using rails g
+      g.stylesheets false # prevent generation of stylesheets when using rails g
+      g.javascripts false
+      g.template_engine :haml
       g.test_framework  :rspec
       # g.orm             :mongoid
     end

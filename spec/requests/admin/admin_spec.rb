@@ -10,7 +10,6 @@ describe 'admin page', js: true do
       page.should have_css("input[id=session_email]")
       page.should have_css("input[id=session_password]")
 
-      p user.email, user.password
       fill_in "session_email", with: user.email
       fill_in "session_password", with: "test"
       click_button "Sign in"
