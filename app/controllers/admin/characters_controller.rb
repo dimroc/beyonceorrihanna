@@ -16,7 +16,7 @@ class Admin::CharactersController < ApplicationController
 
   def create
     Character.create(params[:character])
-    redirect_to character_paths
+    redirect_to admin_characters_path
   end
 
   def update

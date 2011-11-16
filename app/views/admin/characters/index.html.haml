@@ -2,3 +2,4 @@
   %ul
     - @characters.each do |character|
       %li= link_to character.name, edit_admin_character_path(character)
+  =link_to 'new', new_admin_character_path
