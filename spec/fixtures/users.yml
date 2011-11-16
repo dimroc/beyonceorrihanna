@@ -1,10 +1,10 @@
 ---
 users_001:
-  id: 16
-  email: clare@vonrueden.biz
-  encrypted_password: 109d8052b4b134ba935e4edabb6e69a6c9fbdcbb
-  salt: 17f7f00c9a416dad69036ba6ebd9976a9690460d
+  id: 1
+  email: nelson_schuster@emmerich.uk
+  encrypted_password: 3cbea433e55e4170e90d61953feee6a014c39205
+  salt: e45758682bab1d388668c0785e6c7a65449b3360
   confirmation_token: !!null 
-  remember_token: 898fa2f43387fc25b63af4808957427e72ec7d98
-  created_at: 2011-11-16 03:07:26.621538000Z
-  updated_at: 2011-11-16 03:07:26.621538000Z
+  remember_token: b96a37fb5d15322e7a6c9b2ef1962032ca5f5733
+  created_at: 2011-11-16 04:04:18.584373000Z
+  updated_at: 2011-11-16 04:04:18.584373000Z

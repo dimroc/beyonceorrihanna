@@ -15,14 +15,14 @@ class Admin::CharactersController < ApplicationController
   end
 
   def create
-    character = Character.create(params[:character])
-    redirect_to character_path character
+    Character.create(params[:character])
+    redirect_to character_paths
   end
 
   def update
-    character = Character.find_by_id params[:id]
+    character = Character.find_by_slug params[:id]
     character.name = params[:character][:name]
     character.save
-    redirect_to character_path character
+    redirect_to admin_characters_path
   end
 end

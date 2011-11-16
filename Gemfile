@@ -11,6 +11,7 @@ gem 'clearance'
 gem 'batman-rails'
 gem 'bourbon'
 gem 'simple_form'
+gem 'friendly_id', '~>4.0.0.beta14'
 
 gem 'sass-rails',   '~> 3.1.4'
 gem 'coffee-rails', '~> 3.1.1'

@@ -91,6 +91,7 @@ GEM
     fixture_builder (0.3.1)
       activerecord (>= 2)
       activesupport (>= 2)
+    friendly_id (4.0.0.beta14)
     fssm (0.2.7)
     growl_notify (0.0.3)
       rb-appscript
@@ -265,6 +266,7 @@ DEPENDENCIES
   factory_girl_rails
   ffaker
   fixture_builder
+  friendly_id (~> 4.0.0.beta14)
   growl_notify
   guard
   guard-livereload
