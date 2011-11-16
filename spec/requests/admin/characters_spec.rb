@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'admin/characters', js: true do
+describe Character, js: true do
   before { sign_in }
   describe 'ADMIN GET /index' do
     it "should return success" do
@@ -35,6 +35,19 @@ describe 'admin/characters', js: true do
 
       visit admin_characters_path
       page.should have_content character.name
+    end
+  end
+
+  describe "ADMIN edits character" do
+    let(:character) { Character.first }
+    let(:changed_name) { Faker::Name.first_name }
+    it "should allow editing the fields" do
+      visit edit_admin_character_path(character)
+      fill_in "character_name", with: changed_name
+      click_on "Update"
+
+      visit admin_characters_path
+      page.should have_content changed_name
     end
   end
 end

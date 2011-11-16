@@ -18,4 +18,11 @@ class Admin::CharactersController < ApplicationController
     character = Character.create(params[:character])
     redirect_to character_path character
   end
+
+  def update
+    character = Character.find_by_id params[:id]
+    character.name = params[:character][:name]
+    character.save
+    redirect_to character_path character
+  end
 end

@@ -1,10 +1,10 @@
 ---
 users_001:
-  id: 14
-  email: howell@bernier.name
-  encrypted_password: 3d74f1dd3e6bd075f20299ee63bbf7c277b1bab1
-  salt: 3453b514b0476a452b7719a3fdd94175f5008600
+  id: 16
+  email: clare@vonrueden.biz
+  encrypted_password: 109d8052b4b134ba935e4edabb6e69a6c9fbdcbb
+  salt: 17f7f00c9a416dad69036ba6ebd9976a9690460d
   confirmation_token: !!null 
-  remember_token: 53f883a72f7079d1a58dcadd83cbffd04004c79b
-  created_at: 2011-11-07 04:37:05.726412000Z
-  updated_at: 2011-11-07 04:37:05.726412000Z
+  remember_token: 898fa2f43387fc25b63af4808957427e72ec7d98
+  created_at: 2011-11-16 03:07:26.621538000Z
+  updated_at: 2011-11-16 03:07:26.621538000Z
