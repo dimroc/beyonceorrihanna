@@ -1,7 +1,10 @@
-section {
-  font-family: Arial;
-  > p {
-    @include float-left;
-    color: red;
+body.home.index {
+  section {
+    font-family: Arial;
+    > p {
+      @include float-left;
+      color: red;
+      font-family: nimbus-sans;
+    }
   }
 }

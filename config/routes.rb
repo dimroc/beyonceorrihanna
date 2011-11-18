@@ -41,6 +41,8 @@ Beyonceorrihanna::Application.routes.draw do
   #     end
   #   end
 
+  resources :characters, only: [:index, :show]
+
   # Sample resource route within a namespace:
   namespace :admin do
     resources :rivals
