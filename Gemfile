@@ -4,6 +4,7 @@ gem 'rails', '3.1.1'
 
 gem 'pg'
 gem 'haml'
+gem 'haml-rails'
 gem 'thin-rails'
 gem 'jquery-rails'
 
