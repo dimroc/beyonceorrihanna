@@ -3,5 +3,3 @@
   - Character.find_each do |character|
     %li
       = link_to character.name, character
-      - if signed_in?
-        = link_to "edit", edit_admin_character_path(character)

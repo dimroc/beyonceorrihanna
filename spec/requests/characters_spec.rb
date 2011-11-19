@@ -12,5 +12,6 @@ describe Character do
     character = Character.all.sample
     visit character_path character
     page.should have_content character.name
+    page.should have_content character.caption
   end
 end

@@ -21,8 +21,7 @@ class Admin::CharactersController < ApplicationController
 
   def update
     character = Character.find_by_slug params[:id]
-    character.name = params[:character][:name]
-    character.save
+    character.update_attributes(params[:character])
     redirect_to admin_characters_path
   end
 end

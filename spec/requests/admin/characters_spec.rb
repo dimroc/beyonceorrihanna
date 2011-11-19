@@ -31,6 +31,7 @@ describe Character, js: true do
     it "should create the character" do
       visit new_admin_character_path
       fill_in "Name", with: character.name
+      fill_in "Caption", with: character.caption
       click_on "Create"
 
       visit admin_characters_path
@@ -41,13 +42,18 @@ describe Character, js: true do
   describe "ADMIN edits character" do
     let(:character) { Character.first }
     let(:changed_name) { Faker::Name.first_name }
+    let(:changed_caption) { Faker::Lorem.sentence }
     it "should allow editing the fields" do
       visit edit_admin_character_path(character)
       fill_in "character_name", with: changed_name
-      click_on "Update"
+      fill_in "character_caption", with: changed_caption
+      click_button "Update Character"
 
-      visit admin_characters_path
+      character.reload
+      character.name.should == changed_name
+      visit character_path character
       page.should have_content changed_name
+      page.should have_content changed_caption
     end
   end
 end

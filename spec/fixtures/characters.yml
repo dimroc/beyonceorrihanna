@@ -2,12 +2,14 @@
 rihanna:
   id: 1
   name: Rihanna
-  created_at: 2011-11-16 04:04:18.496715000Z
-  updated_at: 2011-11-16 04:04:18.496715000Z
+  created_at: 2011-11-19 03:08:54.487085000Z
+  updated_at: 2011-11-19 03:08:54.487085000Z
   slug: rihanna
+  caption: Nulla accusamus nesciunt atque.
 beyonce:
   id: 2
   name: Beyonce
-  created_at: 2011-11-16 04:04:18.535903000Z
-  updated_at: 2011-11-16 04:04:18.535903000Z
+  created_at: 2011-11-19 03:08:54.496522000Z
+  updated_at: 2011-11-19 03:08:54.496522000Z
   slug: beyonce
+  caption: Alias adipisci aut sunt.
