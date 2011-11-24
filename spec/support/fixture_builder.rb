@@ -10,9 +10,10 @@ FixtureBuilder.configure do |config|
 
   # now declare objects
   config.factory do
-    Factory(:character, name: "Rihanna")
-    Factory(:character, name: "Beyonce")
+    @rihanna = Factory(:character, name: "Rihanna")
+    @beyonce = Factory(:character, name: "Beyonce")
 
-    Factory(:user, password: "test")
+    config.name(:user, Factory(:user, password: "test"))
+    config.name(:admin, Factory(:admin, password: "test"))
   end
 end

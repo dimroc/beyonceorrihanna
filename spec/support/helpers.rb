@@ -6,8 +6,12 @@ module Helpers
     click_button "Sign in"
   end
 
+  def sign_in_as_admin
+    sign_in_as users(:admin)
+  end
+
   def sign_in
-    sign_in_as User.first
+    sign_in_as users(:user)
   end
 
   def sign_out
@@ -19,6 +23,6 @@ module Helpers
   end
 
   def controller_sign_in
-    @controller.stub(:current_user).and_return User.first
+    @controller.stub(:current_user).and_return users(:admin)
   end
 end

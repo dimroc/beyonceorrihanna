@@ -1,5 +1,5 @@
 class Admin::CharactersController < ApplicationController
-  before_filter :authorize
+  before_filter :authorize, :admin_authorize
   respond_to :js, :html
 
   def index

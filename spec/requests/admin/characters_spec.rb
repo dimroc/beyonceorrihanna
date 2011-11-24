@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Character, js: true do
-  before { sign_in }
+  before { sign_in_as_admin }
   describe 'ADMIN GET /index' do
     it "should return success" do
       visit admin_characters_path
@@ -23,6 +23,11 @@ describe Character, js: true do
     it "should return failure" do
       visit admin_characters_path
       current_path.should == sign_in_path
+    end
+    it "should return failure for non-admin users" do
+      sign_in
+      visit admin_characters_path
+      current_path.should == root_path
     end
   end
 

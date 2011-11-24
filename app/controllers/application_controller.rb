@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
     @current_action = action_name
     @current_controller = controller_name
   end
+
+  def admin_authorize
+    deny_access unless current_user.try(:admin)
+  end
 end
