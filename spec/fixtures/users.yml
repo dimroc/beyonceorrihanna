@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: nelle@goyette.name
-  encrypted_password: 14f2c5d517863255dec36c6cf7c33a47149605b7
-  salt: 2923aeb99f36703b2309ecce28dc2b7aa4839d21
+  email: keon@bradtkestanton.biz
+  encrypted_password: 9bd3bf9bb8ceb578cc220026991ce3f25c94609b
+  salt: 9143ca3ba2d30e895b6341d74d6ba4b85d89ac78
   confirmation_token: !!null 
-  remember_token: 465131a2a7eabb3e324daa8c11d862e984e44605
-  created_at: 2011-11-25 19:00:21.819214000Z
-  updated_at: 2011-11-25 19:00:21.819214000Z
+  remember_token: cbe90a00de19503a827507f102d6031c836bafa7
+  created_at: 2011-11-25 19:55:24.716809000Z
+  updated_at: 2011-11-25 19:55:24.716809000Z
   admin: false
 admin:
   id: 2
-  email: kurt.torp@cremin.biz
-  encrypted_password: ac622242fc4b31df48d7e43be2f2dc3259e9ce13
-  salt: f55eb9edbb66fc21cb95054aa4749f5c103e8baa
+  email: donnie@friesen.info
+  encrypted_password: aa00c87d049fbed573774c994774e4d708138d4d
+  salt: 5c954b9984cbfe6b6db45c0640d6d804ddeba129
   confirmation_token: !!null 
-  remember_token: 7d87f42975116b8537cfd8ce0b677279271213b2
-  created_at: 2011-11-25 19:00:21.822151000Z
-  updated_at: 2011-11-25 19:00:21.822151000Z
+  remember_token: 04ba5723ef55c80f88d2c38b0d649ed2e0cffb00
+  created_at: 2011-11-25 19:55:24.719820000Z
+  updated_at: 2011-11-25 19:55:24.719820000Z
   admin: true

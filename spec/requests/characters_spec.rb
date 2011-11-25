@@ -9,7 +9,7 @@ describe Character do
   end
 
   it "user can see a character" do
-    character = Character.all.sample
+    character = Character.where("image_url is not null AND image_url != ''").sample
     visit character_path character
     page.should have_content character.name
     page.should have_content character.caption

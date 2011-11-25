@@ -1,3 +1,5 @@
 %h1= @character.name.capitalize
 %h2= @character.caption.try(:capitalize)
 =image_tag @character.image_url if @character.image_url.present?
+%h3= link_to @character.youtube_url, @character.youtube_url
+%h3= @character.twitter_tags

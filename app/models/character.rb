@@ -10,4 +10,9 @@ class Character < ActiveRecord::Base
 
   validates_format_of :youtube_url,
     with: Regexp.union(/^$/, %r{\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))})
+
+  def twitter_tag_list
+    return twitter_tags.split(",").compact.map(&:strip) if twitter_tags.present?
+    []
+  end
 end

@@ -33,6 +33,7 @@ describe Character, js: true do
 
   describe "Admin /new creates character" do
     let(:character) { Factory.build(:character) }
+    after { character.destroy }
     it "should create the character with a few empty fields" do
       visit new_admin_character_path
       fill_in "Name", with: character.name
@@ -48,6 +49,7 @@ describe Character, js: true do
       fill_in "Caption", with: character.caption
       fill_in "Image url", with: character.image_url
       fill_in "Youtube url", with: character.youtube_url
+      fill_in "Twitter tags", with: character.twitter_tags
       click_on "Create"
 
       visit admin_characters_path
@@ -65,10 +67,12 @@ describe Character, js: true do
       fill_in "character_caption", with: changed_character.caption
       fill_in "character_image_url", with: changed_character.image_url
       fill_in "character_youtube_url", with: changed_character.youtube_url
+      fill_in "Twitter tags", with: changed_character.twitter_tags
       click_button "Update Character"
 
       character.reload
       character.name.should == changed_character.name
+      character.twitter_tag_list == changed_character.twitter_tag_list
       visit character_path character
       page.should have_content changed_character.name
       page.should have_content changed_character.caption

@@ -19,4 +19,23 @@ describe Character do
       end
     end
   end
+
+  describe "#twitter_tag_list" do
+    subject { character.twitter_tag_list }
+
+    context "when empty" do
+      let(:character) { Factory(:character, twitter_tags: "") }
+      it { should be_empty }
+    end
+
+    context "when containing one tag" do
+      let(:character) { Factory(:character, twitter_tags: "#sometag") }
+      it { should == ["#sometag"] }
+    end
+
+    context "when containing tags" do
+      let(:character) { Factory(:character, twitter_tags: "#sometag, $AMZN,#rihfacts") }
+      it { should =~ %w(#sometag $AMZN #rihfacts) }
+    end
+  end
 end
