@@ -1,2 +1,3 @@
 %h1= @character.name.capitalize
 %h2= @character.caption.try(:capitalize)
+=image_tag @character.image_url if @character.image_url.present?

@@ -1,21 +1,21 @@
 ---
 user:
-  id: 17
-  email: vergie.luettgen@treutel.uk
-  encrypted_password: b3c415d2444adcb0cdb253e7749e8670c113327b
-  salt: 5a3780e527fae4099b0496af57f10188825ae6d9
+  id: 1
+  email: juliana.ward@lemke.com
+  encrypted_password: 53d064ddd2377f41fe30191ec3010951929420e5
+  salt: 928ca046a796322f69f832551c18762b18d96d28
   confirmation_token: !!null 
-  remember_token: 09e7fc8735781cbdcea1b64178777e4755e5970a
-  created_at: 2011-11-24 23:40:00.888160000Z
-  updated_at: 2011-11-24 23:40:00.888160000Z
+  remember_token: 898d454d6eeec13dad9c84177ec3835ddf4834eb
+  created_at: 2011-11-25 04:29:25.548997000Z
+  updated_at: 2011-11-25 04:29:25.548997000Z
   admin: false
 admin:
-  id: 18
-  email: esperanza@johns.biz
-  encrypted_password: 1730e45fb49a81220e4ffadf487ee887a9720cbf
-  salt: de0d4710f759133bc636167bd7f1ec7233540ddf
+  id: 2
+  email: gillian_krajcik@rau.ca
+  encrypted_password: f8737f015b7ad35b45e34a24e8464855bae9fa67
+  salt: 42cdffdacaa0a7cb60b94b8dc570705502e32202
   confirmation_token: !!null 
-  remember_token: c8f84b2109b62010d7bb4e93981759fc83df252c
-  created_at: 2011-11-24 23:40:00.891016000Z
-  updated_at: 2011-11-24 23:40:00.891016000Z
+  remember_token: 6b42cd7b90e2fdadc1ae156738b355d57edb82e7
+  created_at: 2011-11-25 04:29:25.551940000Z
+  updated_at: 2011-11-25 04:29:25.551940000Z
   admin: true

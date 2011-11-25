@@ -13,5 +13,6 @@ describe Character do
     visit character_path character
     page.should have_content character.name
     page.should have_content character.caption
+    page.should have_css "img[src*='#{character.image_url}']"
   end
 end

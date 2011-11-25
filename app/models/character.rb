@@ -4,4 +4,7 @@ class Character < ActiveRecord::Base
 
   validates_presence_of :name
   validates_uniqueness_of :name
+
+  validates_format_of :image_url,
+    with: Regexp.union(/^$/, %r{\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))})
 end
