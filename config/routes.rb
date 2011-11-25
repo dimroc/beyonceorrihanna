@@ -42,6 +42,7 @@ Beyonceorrihanna::Application.routes.draw do
   #   end
 
   resources :characters, only: [:index, :show]
+  resources :admin, only: [:index], controller: 'admin/admin'
 
   # Sample resource route within a namespace:
   namespace :admin do
