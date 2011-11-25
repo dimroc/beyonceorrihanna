@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: juliana.ward@lemke.com
-  encrypted_password: 53d064ddd2377f41fe30191ec3010951929420e5
-  salt: 928ca046a796322f69f832551c18762b18d96d28
+  email: nelle@goyette.name
+  encrypted_password: 14f2c5d517863255dec36c6cf7c33a47149605b7
+  salt: 2923aeb99f36703b2309ecce28dc2b7aa4839d21
   confirmation_token: !!null 
-  remember_token: 898d454d6eeec13dad9c84177ec3835ddf4834eb
-  created_at: 2011-11-25 04:29:25.548997000Z
-  updated_at: 2011-11-25 04:29:25.548997000Z
+  remember_token: 465131a2a7eabb3e324daa8c11d862e984e44605
+  created_at: 2011-11-25 19:00:21.819214000Z
+  updated_at: 2011-11-25 19:00:21.819214000Z
   admin: false
 admin:
   id: 2
-  email: gillian_krajcik@rau.ca
-  encrypted_password: f8737f015b7ad35b45e34a24e8464855bae9fa67
-  salt: 42cdffdacaa0a7cb60b94b8dc570705502e32202
+  email: kurt.torp@cremin.biz
+  encrypted_password: ac622242fc4b31df48d7e43be2f2dc3259e9ce13
+  salt: f55eb9edbb66fc21cb95054aa4749f5c103e8baa
   confirmation_token: !!null 
-  remember_token: 6b42cd7b90e2fdadc1ae156738b355d57edb82e7
-  created_at: 2011-11-25 04:29:25.551940000Z
-  updated_at: 2011-11-25 04:29:25.551940000Z
+  remember_token: 7d87f42975116b8537cfd8ce0b677279271213b2
+  created_at: 2011-11-25 19:00:21.822151000Z
+  updated_at: 2011-11-25 19:00:21.822151000Z
   admin: true

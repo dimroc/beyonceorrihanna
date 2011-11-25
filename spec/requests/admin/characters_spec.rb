@@ -33,7 +33,7 @@ describe Character, js: true do
 
   describe "Admin /new creates character" do
     let(:character) { Factory.build(:character) }
-    it "should create the character" do
+    it "should create the character with a few empty fields" do
       visit new_admin_character_path
       fill_in "Name", with: character.name
       fill_in "Caption", with: character.caption
@@ -42,23 +42,37 @@ describe Character, js: true do
       visit admin_characters_path
       page.should have_content character.name
     end
+    it "should create the character" do
+      visit new_admin_character_path
+      fill_in "Name", with: character.name
+      fill_in "Caption", with: character.caption
+      fill_in "Image url", with: character.image_url
+      fill_in "Youtube url", with: character.youtube_url
+      click_on "Create"
+
+      visit admin_characters_path
+      page.should have_content character.name
+      Character.find_by_name(character.name).should_not be_nil
+    end
   end
 
   describe "ADMIN edits character" do
     let(:character) { Character.first }
-    let(:changed_name) { Faker::Name.first_name }
-    let(:changed_caption) { Faker::Lorem.sentence }
+    let(:changed_character) { Factory.build(:character) }
     it "should allow editing the fields" do
       visit edit_admin_character_path(character)
-      fill_in "character_name", with: changed_name
-      fill_in "character_caption", with: changed_caption
+      fill_in "character_name", with: changed_character.name
+      fill_in "character_caption", with: changed_character.caption
+      fill_in "character_image_url", with: changed_character.image_url
+      fill_in "character_youtube_url", with: changed_character.youtube_url
       click_button "Update Character"
 
       character.reload
-      character.name.should == changed_name
+      character.name.should == changed_character.name
       visit character_path character
-      page.should have_content changed_name
-      page.should have_content changed_caption
+      page.should have_content changed_character.name
+      page.should have_content changed_character.caption
+      page.should have_css "img[src*='#{changed_character.image_url}']"
     end
   end
 end
