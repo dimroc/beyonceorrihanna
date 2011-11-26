@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111125193717) do
+ActiveRecord::Schema.define(:version => 20111125234518) do
 
   create_table "characters", :force => true do |t|
     t.string   "name",         :null => false
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20111125193717) do
     t.string   "slug"
     t.text     "caption"
     t.string   "image_url"
-    t.string   "youtube_url"
     t.string   "twitter_tags"
+    t.string   "youtube_id"
   end
 
   add_index "characters", ["slug"], :name => "index_characters_on_slug", :unique => true

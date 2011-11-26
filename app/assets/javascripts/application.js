@@ -6,6 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require swfobject
 
 //= require_tree ./models
 //= require_tree ./controllers

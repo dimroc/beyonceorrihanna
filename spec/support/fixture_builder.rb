@@ -10,8 +10,8 @@ FixtureBuilder.configure do |config|
 
   # now declare objects
   config.factory do
-    @rihanna = Factory(:character, name: "Rihanna")
-    @beyonce = Factory(:character, name: "Beyonce")
+    @rihanna = Factory(:character, name: "Rihanna", youtube_id: "tg00YEETFzg")
+    @beyonce = Factory(:character, name: "Beyonce", youtube_id: "VBmMU_iwe6U")
 
     config.name(:user, Factory(:user, password: "test"))
     config.name(:admin, Factory(:admin, password: "test"))

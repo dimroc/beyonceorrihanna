@@ -5,7 +5,7 @@ describe Character do
   it { should validate_uniqueness_of :name }
 
   describe "urls" do
-    [:image_url, :youtube_url].each do |attribute|
+    [:image_url].each do |attribute|
       context "should invalidate an incorrect #{attribute}" do
         subject { lambda { character.save! } }
         let(:character) { Factory.build(:character, attribute => "wwwwwww") }
@@ -36,6 +36,19 @@ describe Character do
     context "when containing tags" do
       let(:character) { Factory(:character, twitter_tags: "#sometag, $AMZN,#rihfacts") }
       it { should =~ %w(#sometag $AMZN #rihfacts) }
+    end
+  end
+
+  describe "#youtube_url" do
+    subject { character.youtube_url }
+    context "when empty" do
+      let(:character) { Factory.build(:character, youtube_id: "") }
+      it { should be_nil }
+    end
+
+    context "when containing an id" do
+      let(:character) { Factory.build(:character, youtube_id: "123456") }
+      it { should == Character::YOUTUBE_FORMAT % character.youtube_id }
     end
   end
 end

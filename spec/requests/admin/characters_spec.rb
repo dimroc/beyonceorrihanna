@@ -48,7 +48,7 @@ describe Character, js: true do
       fill_in "Name", with: character.name
       fill_in "Caption", with: character.caption
       fill_in "Image url", with: character.image_url
-      fill_in "Youtube url", with: character.youtube_url
+      fill_in "Youtube", with: character.youtube_id
       fill_in "Twitter tags", with: character.twitter_tags
       click_on "Create"
 
@@ -66,7 +66,7 @@ describe Character, js: true do
       fill_in "character_name", with: changed_character.name
       fill_in "character_caption", with: changed_character.caption
       fill_in "character_image_url", with: changed_character.image_url
-      fill_in "character_youtube_url", with: changed_character.youtube_url
+      fill_in "character_youtube_id", with: changed_character.youtube_id
       fill_in "Twitter tags", with: changed_character.twitter_tags
       click_button "Update Character"
 

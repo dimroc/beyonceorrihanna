@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: keon@bradtkestanton.biz
-  encrypted_password: 9bd3bf9bb8ceb578cc220026991ce3f25c94609b
-  salt: 9143ca3ba2d30e895b6341d74d6ba4b85d89ac78
+  email: stephon_daugherty@raynorromaguera.ca
+  encrypted_password: 44f4ed64a93787eadb04f99659f108f141086781
+  salt: 43117420ddb7c2ac2764eb3284aaa0bdb7cc78bb
   confirmation_token: !!null 
-  remember_token: cbe90a00de19503a827507f102d6031c836bafa7
-  created_at: 2011-11-25 19:55:24.716809000Z
-  updated_at: 2011-11-25 19:55:24.716809000Z
+  remember_token: cbfb1d954de3de7f991d1981c390ba490dcb3205
+  created_at: 2011-11-26 00:36:48.748995000Z
+  updated_at: 2011-11-26 00:36:48.748995000Z
   admin: false
 admin:
   id: 2
-  email: donnie@friesen.info
-  encrypted_password: aa00c87d049fbed573774c994774e4d708138d4d
-  salt: 5c954b9984cbfe6b6db45c0640d6d804ddeba129
+  email: general@stanton.us
+  encrypted_password: 087d2700c96d441c8b1b868c6b22d5b392468264
+  salt: a9af01bfe50b44d78f1db00bdd6ff86985d05ad1
   confirmation_token: !!null 
-  remember_token: 04ba5723ef55c80f88d2c38b0d649ed2e0cffb00
-  created_at: 2011-11-25 19:55:24.719820000Z
-  updated_at: 2011-11-25 19:55:24.719820000Z
+  remember_token: 9cee8ae91a427c8259c0548db41bbd446c7a3f32
+  created_at: 2011-11-26 00:36:48.751837000Z
+  updated_at: 2011-11-26 00:36:48.751837000Z
   admin: true
