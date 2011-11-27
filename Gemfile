@@ -8,6 +8,7 @@ gem 'haml-rails'
 gem 'thin-rails'
 gem 'jquery-rails'
 gem 'swfobject-rails'
+gem 'underscore-rails'
 
 gem 'clearance'
 gem 'batman-rails'
