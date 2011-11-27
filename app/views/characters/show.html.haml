@@ -20,14 +20,15 @@
     tags.forEach(function(tag) {
       var twitter_url = TWITTER_API.replace("{0}", tag);
       $.getJSON(twitter_url, function(data) {
-        var list = ich.twitter_list_template({tag: tag, tweets: data});
+        var followers_count = _.first(data).user.followers_count;
+        var list = ich.twitter_list_template({tag: tag, followers_count: followers_count, tweets: data});
         $("#tweets").append(list);
       });
     });
   });
 
 %script{id: 'twitter_list_template', type: "text/html"}
-  %h3 {{tag}}
+  %h3 {{tag}}, followers: {{followers_count}}
   %ul
     {{#tweets}}
     %li
