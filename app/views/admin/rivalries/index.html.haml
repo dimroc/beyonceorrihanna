@@ -1,0 +1,6 @@
+%h1 Rivalries!
+%ul
+  - @rivalries.each do |rivalry|
+    %li= link_to rivalry.to_s, admin_rivalry_path(rivalry)
+
+= link_to "new", new_admin_rivalry_path

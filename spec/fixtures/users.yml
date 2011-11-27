@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: stephon_daugherty@raynorromaguera.ca
-  encrypted_password: 44f4ed64a93787eadb04f99659f108f141086781
-  salt: 43117420ddb7c2ac2764eb3284aaa0bdb7cc78bb
+  email: sylvester@brown.ca
+  encrypted_password: 70c15fbe48f259313c96c6d3c0fa33f8dcda612e
+  salt: 4f30c496d117f6a8e883dd1fc143de23bb9530cd
   confirmation_token: !!null 
-  remember_token: cbfb1d954de3de7f991d1981c390ba490dcb3205
-  created_at: 2011-11-26 00:36:48.748995000Z
-  updated_at: 2011-11-26 00:36:48.748995000Z
+  remember_token: 0271fdaa22d8c39567a19953e995645e194392da
+  created_at: 2011-11-27 18:35:43.987438000Z
+  updated_at: 2011-11-27 18:35:43.987438000Z
   admin: false
 admin:
   id: 2
-  email: general@stanton.us
-  encrypted_password: 087d2700c96d441c8b1b868c6b22d5b392468264
-  salt: a9af01bfe50b44d78f1db00bdd6ff86985d05ad1
+  email: marianne.oconner@marks.us
+  encrypted_password: 9f737acb0f37c4c4d9fc0631ea92d0ac5f9b3f7e
+  salt: a117ab6e6cb04d16a74f3c3d81064461de6b3d4d
   confirmation_token: !!null 
-  remember_token: 9cee8ae91a427c8259c0548db41bbd446c7a3f32
-  created_at: 2011-11-26 00:36:48.751837000Z
-  updated_at: 2011-11-26 00:36:48.751837000Z
+  remember_token: 1bebe3a099a279eea03120a363640ca77ce069f0
+  created_at: 2011-11-27 18:35:43.990264000Z
+  updated_at: 2011-11-27 18:35:43.990264000Z
   admin: true

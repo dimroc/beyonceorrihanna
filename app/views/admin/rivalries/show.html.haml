@@ -1,0 +1,9 @@
+%section
+  %h1 Rivalry Details
+  - @rivalry.entries.each_with_index do |entry, index|
+    %section.entry
+      = render "characters/character", character: entry.character
+      %h3 Votes: #{entry.votes}
+    - if index < @rivalry.entries.length - 1
+      .versus
+        VS

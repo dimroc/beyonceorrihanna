@@ -1,0 +1,12 @@
+body.rivalries.show {
+  font-family: nimbus-sans;
+  section.entry {
+    @include float-left;
+  }
+
+  div.versus {
+    @include float-left;
+    height: 200px;
+    margin: 40px;
+  }
+}

@@ -1,0 +1,3 @@
+= simple_form_for [:admin, @rivalry] do |f|
+  = f.association :characters, as: :check_boxes, collection: characters
+  = f.button :submit

@@ -18,6 +18,8 @@
       - if signed_in? && current_user.try(:admin)
         = link_to "Admin", admin_index_path
 
+      = link_to "Home", root_path
+
     - flash.each do |key, value|
       %div{class: ["flash", key].join(" ")}
         = value

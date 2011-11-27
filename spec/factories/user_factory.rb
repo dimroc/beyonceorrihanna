@@ -1,10 +1,10 @@
 FactoryGirl.define do
   factory :user do
     email { Faker::Internet.email }
-    password { Faker::Lorem.word }
+    password "test"
   end
 
   factory :admin, parent: :user do
-    admin { true }
+    admin true
   end
 end

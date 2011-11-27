@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111125234518) do
+ActiveRecord::Schema.define(:version => 20111127164247) do
 
   create_table "characters", :force => true do |t|
     t.string   "name",         :null => false
@@ -25,6 +25,19 @@ ActiveRecord::Schema.define(:version => 20111125234518) do
   end
 
   add_index "characters", ["slug"], :name => "index_characters_on_slug", :unique => true
+
+  create_table "entries", :force => true do |t|
+    t.integer  "rivalry_id",                  :null => false
+    t.integer  "character_id",                :null => false
+    t.integer  "votes",        :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rivalries", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"

@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe 'admin page', js: true do
-  let(:user) { User.first }
+  let(:user) { users(:admin) }
   it 'allows login' do
-    visit admin_rivals_path
-    current_path.should_not == admin_rivals_path
+    visit admin_index_path
+    current_path.should_not == admin_index_path
 
     within "Form" do
       page.should have_css("input[id=session_email]")
@@ -14,7 +14,8 @@ describe 'admin page', js: true do
       fill_in "session_password", with: "test"
       click_button "Sign in"
     end
-    
-    current_path.should == admin_rivals_path
+
+    visit admin_index_path
+    current_path.should == admin_index_path
   end
 end

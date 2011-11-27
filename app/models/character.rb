@@ -2,6 +2,9 @@ class Character < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
+  has_many :entries
+  has_many :rivalries, through: :entry
+
   YOUTUBE_FORMAT = "http://www.youtube.com/v/%s?enablejsapi=1&amp;version=3&amp;border=0"
 
   validates_presence_of :name
