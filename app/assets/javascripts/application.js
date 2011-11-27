@@ -6,7 +6,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require swfobject
+//= require ICanHaz
 
 //= require_tree ./models
 //= require_tree ./controllers

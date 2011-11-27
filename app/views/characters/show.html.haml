@@ -7,8 +7,29 @@
   #ytapiplayer
 
 %h3= @character.twitter_tags
+%h3 Tweets
+#tweets
+  %ul
 
 :javascript
   $(function() {
-    swfobject.embedSWF("#{@character.youtube_url}", 'ytapiplayer', "398", "224", "8", null, null)
+    swfobject.embedSWF("#{@character.youtube_url}", 'ytapiplayer', "398", "224", "8", null, null);
+
+    tags = #{@character.twitter_tag_list};
+    TWITTER_API = "http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name={0}&count=10";
+    tags.forEach(function(tag) {
+      var twitter_url = TWITTER_API.replace("{0}", tag);
+      $.getJSON(twitter_url, function(data) {
+        var list = ich.twitter_list_template({tag: tag, tweets: data});
+        $("#tweets").append(list);
+      });
+    });
   });
+
+%script{id: 'twitter_list_template', type: "text/html"}
+  %h3 {{tag}}
+  %ul
+    {{#tweets}}
+    %li
+      {{text}}
+    {{/tweets}}
