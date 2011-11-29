@@ -1,0 +1,7 @@
+%script{id: 'twitter_list_template', type: "text/html"}
+  %h3 {{tag}}, followers: {{followers_count}}
+  %ul
+    {{#tweets}}
+    %li
+      {{text}}
+    {{/tweets}}

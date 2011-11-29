@@ -10,6 +10,9 @@
 //= require swfobject
 //= require ICanHaz
 
+//= require youtube
+//= require twitter
+
 //= require_tree ./models
 //= require_tree ./controllers
 //= require_tree ./helpers

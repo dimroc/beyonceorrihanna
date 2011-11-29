@@ -4,35 +4,9 @@
 
 - if character.youtube_url.present?
   %h3= link_to character.youtube_url, character.youtube_url
-  #ytapiplayer
+  .ytapiplayer{id: "ytapiplayer_#{character.id}", data: {youtube_url: character.youtube_url}}
 
-%h3= character.twitter_tags
-%h3 Tweets
-#tweets
-  %ul
-
-:javascript
-  // TODO: Split these damn javascript on load functions into their own partial
-  // They are currently being inserted twice because this partial is used twice in a page.
-  $(function() {
-    swfobject.embedSWF("#{character.youtube_url}", 'ytapiplayer', "398", "224", "8", null, null);
-
-    tags = #{character.twitter_tag_list};
-    TWITTER_API = "http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name={0}&count=10";
-    tags.forEach(function(tag) {
-      var twitter_url = TWITTER_API.replace("{0}", tag);
-      $.getJSON(twitter_url, function(data) {
-        var followers_count = _.first(data).user.followers_count;
-        var list = ich.twitter_list_template({tag: tag, followers_count: followers_count, tweets: data});
-        $("#tweets").append(list);
-      });
-    });
-  });
-
-%script{id: 'twitter_list_template', type: "text/html"}
-  %h3 {{tag}}, followers: {{followers_count}}
-  %ul
-    {{#tweets}}
-    %li
-      {{text}}
-    {{/tweets}}
+- if character.twitter_tags.present?
+  %h3= character.twitter_tags
+  %h3 Tweets
+  .twitter_list{data: {twitter_tags: [character.twitter_tags]}}
