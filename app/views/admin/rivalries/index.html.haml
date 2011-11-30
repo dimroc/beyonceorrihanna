@@ -1,6 +1,24 @@
 %h1 Rivalries!
 %ul
   - @rivalries.each do |rivalry|
-    %li= link_to rivalry.to_s, admin_rivalry_path(rivalry)
+    %li
+      = link_to rivalry.to_s, admin_rivalry_path(rivalry)
+      %a{href: '#', data: {url: admin_rivalry_url(rivalry.id)}} Delete
 
 = link_to "new", new_admin_rivalry_path
+
+:javascript
+  $(function() {
+    $("body.index.rivalries ul li > a").click(function() {
+      source = $(this);
+      if(confirm("Are you sure?")) {
+        $.ajax({
+          type: "DELETE",
+          url: source.data('url'),
+          success: function() {
+            source.closest("li").remove();
+          }
+        });
+      }
+    });
+  });

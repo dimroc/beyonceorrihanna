@@ -36,4 +36,14 @@ describe Rivalry, js: true do
 
     page.should have_content "Votes"
   end
+
+  it "should allow the deletion of a rivalry" do
+    visit admin_rivalries_path
+    count = Rivalry.count
+    within("ul li:first") { click_on "Delete" }
+    dialog = page.driver.browser.switch_to.alert
+    dialog.accept
+    sleep 1
+    Rivalry.count.should == count - 1
+  end
 end

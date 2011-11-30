@@ -1,5 +1,6 @@
 class Admin::RivalriesController < ApplicationController
   before_filter :authorize, :admin_authorize
+  respond_to :html, :js
 
   def index
     @rivalries = Rivalry.all
@@ -26,5 +27,10 @@ class Admin::RivalriesController < ApplicationController
 
   def show
     @rivalry = Rivalry.find(params[:id])
+  end
+
+  def destroy
+    Rivalry.find(params[:id]).destroy
+    render nothing: true
   end
 end

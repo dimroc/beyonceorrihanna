@@ -10,6 +10,7 @@
 //= require swfobject
 //= require ICanHaz
 
+//= require globals
 //= require youtube
 //= require twitter
 
