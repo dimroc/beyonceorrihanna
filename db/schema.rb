@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111127164247) do
+ActiveRecord::Schema.define(:version => 20111203010525) do
 
   create_table "characters", :force => true do |t|
     t.string   "name",         :null => false
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20111127164247) do
   create_table "entries", :force => true do |t|
     t.integer  "rivalry_id",                  :null => false
     t.integer  "character_id",                :null => false
-    t.integer  "votes",        :default => 0
+    t.integer  "votes_count",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,5 +52,12 @@ ActiveRecord::Schema.define(:version => 20111127164247) do
 
   add_index "users", ["email"], :name => "index_users_on_email"
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+
+  create_table "votes", :force => true do |t|
+    t.integer  "entry_id"
+    t.string   "ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

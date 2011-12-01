@@ -4,9 +4,18 @@ body.rivalries.show {
     @include float-left;
   }
 
-  div.versus {
+  .versus {
     @include float-left;
     height: 200px;
-    margin: 40px;
+    margin: 10px;
+  }
+
+  section.character_info {
+    @include clearfix;
+    width: 400px;
+
+    img {
+      display: block;
+    }
   }
 }

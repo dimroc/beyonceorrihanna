@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: sylvester@brown.ca
-  encrypted_password: 70c15fbe48f259313c96c6d3c0fa33f8dcda612e
-  salt: 4f30c496d117f6a8e883dd1fc143de23bb9530cd
+  email: tia@kleinharris.info
+  encrypted_password: 800a957ff65bad83257795e5d66be40fbd4e9cc1
+  salt: 32cab8a5f500cbac56a878d380f5dd10d21658ea
   confirmation_token: !!null 
-  remember_token: 0271fdaa22d8c39567a19953e995645e194392da
-  created_at: 2011-11-27 18:35:43.987438000Z
-  updated_at: 2011-11-27 18:35:43.987438000Z
+  remember_token: 5bf6a2559a57666cf6255755f5c8b18844a66d85
+  created_at: 2011-12-03 01:07:10.010337000Z
+  updated_at: 2011-12-03 01:07:10.010337000Z
   admin: false
 admin:
   id: 2
-  email: marianne.oconner@marks.us
-  encrypted_password: 9f737acb0f37c4c4d9fc0631ea92d0ac5f9b3f7e
-  salt: a117ab6e6cb04d16a74f3c3d81064461de6b3d4d
+  email: newell_hoppe@stracke.us
+  encrypted_password: e179e0953b8c73679c5cd6316bbc71b4d6f3dcbd
+  salt: c179f582067c4ba20bb7627ea59f2947aae10e19
   confirmation_token: !!null 
-  remember_token: 1bebe3a099a279eea03120a363640ca77ce069f0
-  created_at: 2011-11-27 18:35:43.990264000Z
-  updated_at: 2011-11-27 18:35:43.990264000Z
+  remember_token: 4a2e63807c0de3db6f1f036b2f2e886f4a817925
+  created_at: 2011-12-03 01:07:10.014199000Z
+  updated_at: 2011-12-03 01:07:10.014199000Z
   admin: true

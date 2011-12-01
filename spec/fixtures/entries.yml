@@ -3,13 +3,13 @@ entries_001:
   id: 1
   rivalry_id: 1
   character_id: 2
-  votes: 0
-  created_at: 2011-11-27 18:35:43.973851000Z
-  updated_at: 2011-11-27 18:35:43.973851000Z
+  votes_count: 0
+  created_at: 2011-12-03 01:07:09.966950000Z
+  updated_at: 2011-12-03 01:07:09.966950000Z
 entries_002:
   id: 2
   rivalry_id: 1
   character_id: 1
-  votes: 0
-  created_at: 2011-11-27 18:35:43.976599000Z
-  updated_at: 2011-11-27 18:35:43.976599000Z
+  votes_count: 0
+  created_at: 2011-12-03 01:07:09.969766000Z
+  updated_at: 2011-12-03 01:07:09.969766000Z
