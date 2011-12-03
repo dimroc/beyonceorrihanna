@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   friendly_id :name, use: :slugged
 
   has_many :entries
-  has_many :rivalries, through: :entry
+  has_many :rivalries, through: :rivalry_character
 
   YOUTUBE_FORMAT = "http://www.youtube.com/v/%s?enablejsapi=1&amp;version=3&amp;border=0"
 

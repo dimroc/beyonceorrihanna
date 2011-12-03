@@ -1,0 +1,15 @@
+---
+rivalry_characters_001:
+  id: 1
+  rivalry_id: 1
+  character_id: 2
+  votes_count: 0
+  created_at: 2011-12-03 01:57:20.345609000Z
+  updated_at: 2011-12-03 01:57:20.345609000Z
+rivalry_characters_002:
+  id: 2
+  rivalry_id: 1
+  character_id: 1
+  votes_count: 0
+  created_at: 2011-12-03 01:57:20.348424000Z
+  updated_at: 2011-12-03 01:57:20.348424000Z

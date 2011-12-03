@@ -15,8 +15,8 @@ FixtureBuilder.configure do |config|
 
     @rivalry = Factory(:rivalry)
 
-    Factory(:entry, rivalry: @rivalry, character: @beyonce)
-    Factory(:entry, rivalry: @rivalry, character: @rihanna)
+    Factory(:rivalry_character, rivalry: @rivalry, character: @beyonce)
+    Factory(:rivalry_character, rivalry: @rivalry, character: @rihanna)
 
     config.name(:user, Factory(:user))
     config.name(:admin, Factory(:admin))

@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: tia@kleinharris.info
-  encrypted_password: 800a957ff65bad83257795e5d66be40fbd4e9cc1
-  salt: 32cab8a5f500cbac56a878d380f5dd10d21658ea
+  email: norene_kautzer@runte.name
+  encrypted_password: 8ff5ddbbff74f7fb1e98213cabde990b0b97d914
+  salt: 9a17e352fe32cad28ceb40de132f95721012cc25
   confirmation_token: !!null 
-  remember_token: 5bf6a2559a57666cf6255755f5c8b18844a66d85
-  created_at: 2011-12-03 01:07:10.010337000Z
-  updated_at: 2011-12-03 01:07:10.010337000Z
+  remember_token: 1af02a4d94005d0c9d9b73ff1cf98ed380a03feb
+  created_at: 2011-12-03 01:57:20.362445000Z
+  updated_at: 2011-12-03 01:57:20.362445000Z
   admin: false
 admin:
   id: 2
-  email: newell_hoppe@stracke.us
-  encrypted_password: e179e0953b8c73679c5cd6316bbc71b4d6f3dcbd
-  salt: c179f582067c4ba20bb7627ea59f2947aae10e19
+  email: cruz_goyette@emmerich.biz
+  encrypted_password: 5e79d898a441dd098958c7d2da71a7912510dcad
+  salt: e27beeea5f67d9ade93fcc43dbb2bb55fa40f495
   confirmation_token: !!null 
-  remember_token: 4a2e63807c0de3db6f1f036b2f2e886f4a817925
-  created_at: 2011-12-03 01:07:10.014199000Z
-  updated_at: 2011-12-03 01:07:10.014199000Z
+  remember_token: a38c70efb73dda933dfc3f498f03bf0b9295c45b
+  created_at: 2011-12-03 01:57:20.365846000Z
+  updated_at: 2011-12-03 01:57:20.365846000Z
   admin: true

@@ -1,10 +1,10 @@
 %section
   %h1 Rivalry Details
-  - @rivalry.entries.each_with_index do |entry, index|
+  - @rivalry.rivalry_characters.each_with_index do |rivalry_character, index|
     %section.entry
-      = render "characters/character", entry: entry
-      %h3 Votes: #{entry.votes}
-    - if index < @rivalry.entries.length - 1
+      = render "characters/character", rivalry_character: rivalry_character
+      %h3 Votes: #{rivalry_character.votes_count}
+    - if index < @rivalry.rivalry_characters.length - 1
       .versus
         VS
 

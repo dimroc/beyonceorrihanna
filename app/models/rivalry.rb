@@ -1,7 +1,7 @@
 class Rivalry < ActiveRecord::Base
-  has_many :entries, dependent: :destroy
-  has_many :characters, through: :entries
-  has_many :votes, through: :entries
+  has_many :rivalry_characters, dependent: :destroy
+  has_many :characters, through: :rivalry_characters
+  has_many :votes, through: :rivalry_characters
 
   def to_s
     rval = ""

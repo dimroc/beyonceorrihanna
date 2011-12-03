@@ -19,7 +19,7 @@ class Admin::RivalriesController < ApplicationController
 
     @rivalry = Rivalry.create!
     character_ids.each do |character_id|
-      Entry.create!(character_id: character_id, rivalry: @rivalry)
+      RivalryCharacter.create!(character_id: character_id, rivalry: @rivalry)
     end
 
     redirect_to admin_rivalry_path @rivalry

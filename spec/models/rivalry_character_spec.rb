@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Entry do
+describe RivalryCharacter do
   describe "associations" do
     it { should belong_to :character }
     it { should belong_to :rivalry }
@@ -14,15 +14,15 @@ describe Entry do
   end
 
   describe "factories work" do
-    subject { entry }
-    let(:entry) { Factory(:entry) }
+    subject { rivalry_character }
+    let(:rivalry_character) { Factory(:rivalry_character) }
     its(:character) { should_not be_nil }
     its(:rivalry) { should_not be_nil }
   end
 
   describe ".vote!" do
-    subject { lambda { entry.vote!(Faker::Internet.ip_v4_address) } }
-    let(:entry) { Factory(:entry) }
-    it { should change { entry.rivalry.votes.count }.by(1) }
+    subject { lambda { rivalry_character.vote!(Faker::Internet.ip_v4_address) } }
+    let(:rivalry_character) { Factory(:rivalry_character) }
+    it { should change { rivalry_character.rivalry.votes.count }.by(1) }
   end
 end

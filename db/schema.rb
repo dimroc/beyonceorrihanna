@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111203010525) do
+ActiveRecord::Schema.define(:version => 20111203014940) do
 
   create_table "characters", :force => true do |t|
     t.string   "name",         :null => false
@@ -26,15 +26,15 @@ ActiveRecord::Schema.define(:version => 20111203010525) do
 
   add_index "characters", ["slug"], :name => "index_characters_on_slug", :unique => true
 
-  create_table "entries", :force => true do |t|
-    t.integer  "rivalry_id",                  :null => false
-    t.integer  "character_id",                :null => false
-    t.integer  "votes_count",  :default => 0
+  create_table "rivalries", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "rivalries", :force => true do |t|
+  create_table "rivalry_characters", :force => true do |t|
+    t.integer  "rivalry_id",                  :null => false
+    t.integer  "character_id",                :null => false
+    t.integer  "votes_count",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20111203010525) do
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
   create_table "votes", :force => true do |t|
-    t.integer  "entry_id"
+    t.integer  "rivalry_character_id"
     t.string   "ip"
     t.datetime "created_at"
     t.datetime "updated_at"
