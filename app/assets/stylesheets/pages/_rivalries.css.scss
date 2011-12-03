@@ -10,12 +10,19 @@ body.rivalries.show {
     margin: 10px;
   }
 
-  section.character_info {
+  section.rivalry_character {
     @include clearfix;
     width: 400px;
 
     img {
       display: block;
+    }
+
+    .punch {
+      @include punch;
+      display: block;
+      margin-top: 54px;
+      text-decoration: none;
     }
   }
 }

@@ -1,10 +1,10 @@
 - character = rivalry_character.character
-%section.character_info
+%section{class: ["rivalry_character", "rivalry_character_#{rivalry_character.id}"]}
   %h1= character.name.capitalize
   %h2= character.caption.try(:capitalize)
   =image_tag character.image_url if character.image_url.present?
 
-  %a.punch= link_to "Vote", votes_path(rivalry_character_id: rivalry_character.id), remote: true, method: :post
+  = button_to "Vote", votes_path(rivalry_character_id: rivalry_character.id), remote: true, method: :post, class: 'punch', data: {id: rivalry_character.id}
 
   - if character.youtube_url.present?
     %h3= link_to character.youtube_url, character.youtube_url

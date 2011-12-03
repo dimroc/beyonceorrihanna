@@ -46,4 +46,15 @@ describe Rivalry, js: true do
     sleep 1
     Rivalry.count.should == count - 1
   end
+
+  it "should allow the ability to vote for a rivalry_character" do
+    rivalry = Rivalry.random.first
+    visit admin_rivalries_path
+    within("#container ul") { click_on rivalry.to_s }
+    current_path.should == admin_rivalry_path(rivalry)
+
+    lambda {
+      page.evaluate_script("$('section.rivalry_character:first form').submit()")
+    }.should change { Vote.count }.by(1)
+  end
 end

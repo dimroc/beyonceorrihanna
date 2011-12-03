@@ -3,6 +3,8 @@ class Rivalry < ActiveRecord::Base
   has_many :characters, through: :rivalry_characters
   has_many :votes, through: :rivalry_characters
 
+  scope :random , order("random()")
+
   def to_s
     rval = ""
     characters.each_with_index do |character, index|

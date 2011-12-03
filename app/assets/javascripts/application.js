@@ -11,6 +11,7 @@
 //= require ICanHaz
 
 //= require globals
+//= require characters
 //= require youtube
 //= require twitter
 
