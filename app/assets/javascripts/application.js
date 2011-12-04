@@ -10,11 +10,7 @@
 //= require swfobject
 //= require ICanHaz
 
-//= require globals
-//= require characters
-//= require youtube
-//= require twitter
-
+//= require_directory .
 //= require_tree ./models
 //= require_tree ./controllers
 //= require_tree ./helpers

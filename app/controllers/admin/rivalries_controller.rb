@@ -3,6 +3,7 @@ class Admin::RivalriesController < ApplicationController
   respond_to :html, :js
 
   def index
+    p Rivalry.all
     @rivalries = Rivalry.all
   end
 

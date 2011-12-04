@@ -48,8 +48,10 @@ describe Rivalry, js: true do
   end
 
   it "should allow the ability to vote for a rivalry_character" do
-    rivalry = Rivalry.random.first
+    rivalry = Factory(:pair_rivalry)
+    p "rivalries in it: #{Rivalry.all}"
     visit admin_rivalries_path
+
     within("#container ul") { click_on rivalry.to_s }
     current_path.should == admin_rivalry_path(rivalry)
 

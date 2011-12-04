@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :rivalry_character do
     association :character
-    association :rivalry, factory: :pair_rivalry
+    association :rivalry
   end
 end

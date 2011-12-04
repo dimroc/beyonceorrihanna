@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: norene_kautzer@runte.name
-  encrypted_password: 8ff5ddbbff74f7fb1e98213cabde990b0b97d914
-  salt: 9a17e352fe32cad28ceb40de132f95721012cc25
+  email: keenan@lubowitzkuhlman.ca
+  encrypted_password: 2245b66aac7797ff0f79dae3069bf2d9e54cbfcc
+  salt: be55c8e2ea53ec5042afe50adc4b64c8ba08c710
   confirmation_token: !!null 
-  remember_token: 1af02a4d94005d0c9d9b73ff1cf98ed380a03feb
-  created_at: 2011-12-03 01:57:20.362445000Z
-  updated_at: 2011-12-03 01:57:20.362445000Z
+  remember_token: cd2de384b7a4c6b329fadab05864cd81a5b62d01
+  created_at: 2011-12-04 16:41:10.918222000Z
+  updated_at: 2011-12-04 16:41:10.918222000Z
   admin: false
 admin:
   id: 2
-  email: cruz_goyette@emmerich.biz
-  encrypted_password: 5e79d898a441dd098958c7d2da71a7912510dcad
-  salt: e27beeea5f67d9ade93fcc43dbb2bb55fa40f495
+  email: marquise@douglas.ca
+  encrypted_password: f390e61a089a1f078eaf41c38a78fa7a62828b39
+  salt: 7c4710fa25d2559993fe20d06aed0cd64b8c8f10
   confirmation_token: !!null 
-  remember_token: a38c70efb73dda933dfc3f498f03bf0b9295c45b
-  created_at: 2011-12-03 01:57:20.365846000Z
-  updated_at: 2011-12-03 01:57:20.365846000Z
+  remember_token: 7fb8b92bd8cfce8eec30680c668bef78b7a4af43
+  created_at: 2011-12-04 16:41:10.921107000Z
+  updated_at: 2011-12-04 16:41:10.921107000Z
   admin: true

@@ -6,7 +6,7 @@
 //= require batman/batman.jquery
 //= require batman/batman.rails
 
-//= require beyonceorrihanna
+//= require batman/beyonceorrihanna
 
 // Run the Batman app
 $(document).ready(function(){
