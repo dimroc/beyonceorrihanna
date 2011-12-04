@@ -4,7 +4,10 @@
   %h2= character.caption.try(:capitalize)
   =image_tag character.image_url if character.image_url.present?
 
-  = button_to "Vote", votes_path(rivalry_character_id: rivalry_character.id), remote: true, method: :post, class: 'punch', data: {id: rivalry_character.id}
+  = link_to "Vote",
+    "#",
+    class: ['punch', 'rivalry_character_vote'],
+    data: {id: rivalry_character.id, enabled: true}
 
   - if character.youtube_url.present?
     %h3= link_to character.youtube_url, character.youtube_url

@@ -54,7 +54,8 @@ describe Rivalry, js: true do
     current_path.should == admin_rivalry_path(rivalry)
 
     lambda {
-      page.evaluate_script("$('section.rivalry_character:first form').submit()")
+      rivalry_character = rivalry.rivalry_characters.sample
+      within("section.rivalry_character_#{rivalry_character.id}") { click_on "Vote" }
     }.should change { Vote.count }.by(1)
   end
 end
