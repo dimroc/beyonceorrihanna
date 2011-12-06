@@ -28,8 +28,7 @@ gem 'compass-960-plugin'
 group :test do
   gem 'capybara'
   gem 'capybara-firebug', require: "capybara/firebug"
-  gem 'headless', require: false
-  gem 'selenium-webdriver', '2.8.0'
+  gem 'selenium-webdriver'
   # Pretty printed test output
   gem 'turn', :require => false
 end
