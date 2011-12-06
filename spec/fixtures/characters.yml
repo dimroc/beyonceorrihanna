@@ -2,20 +2,40 @@
 rihanna:
   id: 1
   name: Rihanna
-  created_at: 2011-12-04 16:41:10.812776000Z
-  updated_at: 2011-12-04 16:41:10.812776000Z
+  created_at: 2011-12-06 06:21:18.116515000Z
+  updated_at: 2011-12-06 06:21:18.116515000Z
   slug: rihanna
-  caption: Neque architecto iure voluptate.
-  image_url: http://jasthuel.biz
-  twitter_tags: Trinity,blanditiis
+  caption: Est sit excepturi saepe.
+  image_url: http://toy.co.uk
+  twitter_tags: Brooklyn,error
   youtube_id: tg00YEETFzg
 beyonce:
   id: 2
   name: Beyonce
-  created_at: 2011-12-04 16:41:10.850854000Z
-  updated_at: 2011-12-04 16:41:10.850854000Z
+  created_at: 2011-12-06 06:21:18.126134000Z
+  updated_at: 2011-12-06 06:21:18.126134000Z
   slug: beyonce
-  caption: Tempora libero sed quas exercitationem omnis.
-  image_url: http://cummerata.name
-  twitter_tags: Elyssa,ea
+  caption: Quia minus ad consequatur accusantium qui expedita et.
+  image_url: http://schamberger.us
+  twitter_tags: Laron,sunt
   youtube_id: VBmMU_iwe6U
+shanelle:
+  id: 3
+  name: Shanelle
+  created_at: 2011-12-06 06:21:18.222391000Z
+  updated_at: 2011-12-06 06:21:18.222391000Z
+  slug: shanelle
+  caption: Est quis eos deserunt eum ex ratione atque.
+  image_url: http://reilly.biz
+  twitter_tags: Kasandra,consequatur
+  youtube_id: mollitia
+hortense:
+  id: 4
+  name: Hortense
+  created_at: 2011-12-06 06:21:18.227818000Z
+  updated_at: 2011-12-06 06:21:18.227818000Z
+  slug: hortense
+  caption: Corporis facilis iste ut nam natus iure.
+  image_url: http://rempel.uk
+  twitter_tags: Jarrett,voluptatem
+  youtube_id: earum

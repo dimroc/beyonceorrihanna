@@ -49,7 +49,6 @@ describe Rivalry, js: true do
 
   it "should allow the ability to vote for a rivalry_character" do
     rivalry = Factory(:pair_rivalry)
-    p "rivalries in it: #{Rivalry.all}"
     visit admin_rivalries_path
 
     within("#container ul") { click_on rivalry.to_s }
@@ -58,6 +57,7 @@ describe Rivalry, js: true do
     lambda {
       rivalry_character = rivalry.rivalry_characters.sample
       within("section.rivalry_character_#{rivalry_character.id}") { click_on "Vote" }
+      wait_until { page.should have_css("section.rivalry_character.voted") }
     }.should change { Vote.count }.by(1)
   end
 end

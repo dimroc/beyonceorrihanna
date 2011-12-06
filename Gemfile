@@ -54,6 +54,8 @@ group :development, :test do
   gem "remarkable_activerecord", "~> 4.0.0.alpha4", require: false
   gem 'valid_attribute'
   gem 'wirble'
+  gem "spork", "~> 0.9.0.rc9", require: false
+  gem 'database_cleaner'
 end
 
 group :production, :staging do

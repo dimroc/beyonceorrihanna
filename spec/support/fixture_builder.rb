@@ -13,10 +13,12 @@ FixtureBuilder.configure do |config|
     @rihanna = Factory(:character, name: "Rihanna", youtube_id: "tg00YEETFzg")
     @beyonce = Factory(:character, name: "Beyonce", youtube_id: "VBmMU_iwe6U")
 
-    @rivalry = Factory(:rivalry)
+    config.name(:beyonceorrihanna, rivalry = Factory(:rivalry))
 
-    Factory(:rivalry_character, rivalry: @rivalry, character: @beyonce)
-    Factory(:rivalry_character, rivalry: @rivalry, character: @rihanna)
+    Factory(:rivalry_character, rivalry: rivalry, character: @beyonce)
+    Factory(:rivalry_character, rivalry: rivalry, character: @rihanna)
+
+    Factory(:pair_rivalry)
 
     config.name(:user, Factory(:user))
     config.name(:admin, Factory(:admin))

@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: keenan@lubowitzkuhlman.ca
-  encrypted_password: 2245b66aac7797ff0f79dae3069bf2d9e54cbfcc
-  salt: be55c8e2ea53ec5042afe50adc4b64c8ba08c710
+  email: omer@franeckibernhard.uk
+  encrypted_password: 44a524fc827b0dcc30f301b1c05f98a28ddb313a
+  salt: 95007b09696fcf372839d8ff300caeae2caf1549
   confirmation_token: !!null 
-  remember_token: cd2de384b7a4c6b329fadab05864cd81a5b62d01
-  created_at: 2011-12-04 16:41:10.918222000Z
-  updated_at: 2011-12-04 16:41:10.918222000Z
+  remember_token: 38ddcd15223867a4657e1f88435a6b2d3739f8a4
+  created_at: 2011-12-06 06:21:18.291788000Z
+  updated_at: 2011-12-06 06:21:18.291788000Z
   admin: false
 admin:
   id: 2
-  email: marquise@douglas.ca
-  encrypted_password: f390e61a089a1f078eaf41c38a78fa7a62828b39
-  salt: 7c4710fa25d2559993fe20d06aed0cd64b8c8f10
+  email: winfield_anderson@kshlerin.info
+  encrypted_password: 391e68e1a5cee4cf0b0808c85413cadde99ba38a
+  salt: 7ebc8888625be700f2537397c611c3c9b44a419c
   confirmation_token: !!null 
-  remember_token: 7fb8b92bd8cfce8eec30680c668bef78b7a4af43
-  created_at: 2011-12-04 16:41:10.921107000Z
-  updated_at: 2011-12-04 16:41:10.921107000Z
+  remember_token: 65f4aa19d559c648fe92d2da020df4b3b066dc94
+  created_at: 2011-12-06 06:21:18.295040000Z
+  updated_at: 2011-12-06 06:21:18.295040000Z
   admin: true
