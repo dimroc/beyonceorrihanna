@@ -1,6 +1,9 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
+// Global dependencies
+//= require underscore
+
 // Batman.js and its adapters
 //= require batman/batman
 //= require batman/batman.jquery
