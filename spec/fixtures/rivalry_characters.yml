@@ -4,26 +4,26 @@ rivalry_characters_001:
   rivalry_id: 1
   character_id: 2
   votes_count: 0
-  created_at: 2011-12-06 06:21:18.215578000Z
-  updated_at: 2011-12-06 06:21:18.215578000Z
+  created_at: 2011-12-07 04:15:53.811764000Z
+  updated_at: 2011-12-07 04:15:53.811764000Z
 rivalry_characters_002:
   id: 2
   rivalry_id: 1
   character_id: 1
   votes_count: 0
-  created_at: 2011-12-06 06:21:18.218654000Z
-  updated_at: 2011-12-06 06:21:18.218654000Z
+  created_at: 2011-12-07 04:15:53.815063000Z
+  updated_at: 2011-12-07 04:15:53.815063000Z
 rivalry_characters_003:
   id: 3
   rivalry_id: 2
   character_id: 3
   votes_count: 0
-  created_at: 2011-12-06 06:21:18.224595000Z
-  updated_at: 2011-12-06 06:21:18.279716000Z
+  created_at: 2011-12-07 04:15:53.821972000Z
+  updated_at: 2011-12-07 04:15:53.821972000Z
 rivalry_characters_004:
   id: 4
   rivalry_id: 2
   character_id: 4
   votes_count: 0
-  created_at: 2011-12-06 06:21:18.229877000Z
-  updated_at: 2011-12-06 06:21:18.281161000Z
+  created_at: 2011-12-07 04:15:53.826797000Z
+  updated_at: 2011-12-07 04:15:53.826797000Z

@@ -1,21 +1,21 @@
 ---
 user:
   id: 1
-  email: omer@franeckibernhard.uk
-  encrypted_password: 44a524fc827b0dcc30f301b1c05f98a28ddb313a
-  salt: 95007b09696fcf372839d8ff300caeae2caf1549
+  email: gordon_johns@lebsack.us
+  encrypted_password: e0961730d011b700e2544d482807616177d84cc1
+  salt: 75372f14b0aa38e98d41c4fbb4a1b418e34020c5
   confirmation_token: !!null 
-  remember_token: 38ddcd15223867a4657e1f88435a6b2d3739f8a4
-  created_at: 2011-12-06 06:21:18.291788000Z
-  updated_at: 2011-12-06 06:21:18.291788000Z
+  remember_token: 9f6c0747f03a1e8d3ad5760b4c8e668929e0bc90
+  created_at: 2011-12-07 04:15:53.837383000Z
+  updated_at: 2011-12-07 04:15:53.837383000Z
   admin: false
 admin:
   id: 2
-  email: winfield_anderson@kshlerin.info
-  encrypted_password: 391e68e1a5cee4cf0b0808c85413cadde99ba38a
-  salt: 7ebc8888625be700f2537397c611c3c9b44a419c
+  email: kamron@brakus.name
+  encrypted_password: b390d99596718143f30013f17e82751168682aad
+  salt: 2ebe25b029d29d6840b71cd93312d1b6775f4171
   confirmation_token: !!null 
-  remember_token: 65f4aa19d559c648fe92d2da020df4b3b066dc94
-  created_at: 2011-12-06 06:21:18.295040000Z
-  updated_at: 2011-12-06 06:21:18.295040000Z
+  remember_token: 0eed52c8382bbbe41d1bc7799709e35a095d0b8a
+  created_at: 2011-12-07 04:15:53.840288000Z
+  updated_at: 2011-12-07 04:15:53.840288000Z
   admin: true

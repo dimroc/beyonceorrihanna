@@ -5,6 +5,9 @@ FactoryGirl.define do
   end
 
   factory :pair_rivalry, parent: :rivalry do
-    rivalry_characters { |entries| [entries.association(:rivalry_character, rivalry_id: :id), entries.association(:rivalry_character, rivalry_id: :id)] }
+    after_create do |rivalry|
+      Factory(:rivalry_character, rivalry: rivalry)
+      Factory(:rivalry_character, rivalry: rivalry)
+    end
   end
 end
