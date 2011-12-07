@@ -4,6 +4,7 @@ describe Vote do
   describe "associations" do
     it { should belong_to :rivalry_character }
     it { should have_one :rivalry }
+    it { should have_one :character }
   end
 
   describe "validations" do

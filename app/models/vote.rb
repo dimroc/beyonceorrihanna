@@ -3,6 +3,7 @@ class Vote < ActiveRecord::Base
 
   belongs_to :rivalry_character, counter_cache: :votes_count
   has_one :rivalry, through: :rivalry_character
+  has_one :character, through: :rivalry_character
 
   validates :rivalry_character_id, presence: true
   validates :ip,

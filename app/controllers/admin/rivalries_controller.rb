@@ -27,6 +27,7 @@ class Admin::RivalriesController < ApplicationController
 
   def show
     @rivalry = Rivalry.find(params[:id])
+    @vote = @rivalry.votes.find_by_ip(request.remote_ip).presence
   end
 
   def destroy

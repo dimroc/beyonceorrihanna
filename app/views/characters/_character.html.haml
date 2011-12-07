@@ -1,13 +1,22 @@
 - character = rivalry_character.character
-%section{class: ["rivalry_character", "rivalry_character_#{rivalry_character.id}"]}
+- voted_for = vote.try(:character) == rivalry_character.character
+- class_list = ["rivalry_character", "rivalry_character_#{rivalry_character.id}"]
+- class_list << "voted" if voted_for
+%section{class: class_list}
   %h1= character.name.capitalize
   %h2= character.caption.try(:capitalize)
   =image_tag character.image_url if character.image_url.present?
 
-  = link_to "Vote",
-    "#",
-    class: ['punch', 'rivalry_character_vote'],
-    data: {id: rivalry_character.id, enabled: true}
+  - if voted_for || vote
+    = link_to "Voted",
+      "#",
+      class: ['punch', 'rivalry_character_vote', 'disabled'],
+      data: {id: rivalry_character.id, enabled: true}
+  - else
+    = link_to "Vote",
+      "#",
+      class: ['punch', 'rivalry_character_vote'],
+      data: {id: rivalry_character.id, enabled: true}
 
   - if character.youtube_url.present?
     %h3= link_to character.youtube_url, character.youtube_url
