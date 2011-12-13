@@ -276,6 +276,7 @@ DEPENDENCIES
   ffaker
   fixture_builder
   friendly_id (~> 4.0.0.beta14)
+  fssm
   growl_notify
   guard
   guard-livereload

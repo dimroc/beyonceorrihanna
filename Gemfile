@@ -56,6 +56,7 @@ group :development, :test do
   gem 'wirble'
   gem "spork", "~> 0.9.0.rc9", require: false
   gem 'database_cleaner'
+  gem 'fssm'
 end
 
 group :production, :staging do
