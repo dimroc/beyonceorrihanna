@@ -1,5 +1,7 @@
 window.Beyonceorrihanna = class Beyonceorrihanna extends Batman.App
 
+  Batman.View::prefix = 'assets/batman/views'
+
   @root 'characters#index'
 #  @route '/controller/:id', 'controller#show', resource: 'model', action: 'show'
   @resources 'characters'

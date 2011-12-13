@@ -1,0 +1,9 @@
+<ul id='characters'>
+  <li data-foreach-character='Character.all' data-mixin='animation'>
+    <a data-bind='character.name' data-route='character'>name will go here</a>
+  </li>
+  <li>
+    <span data-bind='characters.length'></span>
+    <span data-bind="'character' | pluralize products.length"></span>
+  </li>
+</ul>
