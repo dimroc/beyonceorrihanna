@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Rivalry, js: true do
+describe Rivalry do
   before { sign_in_as_admin }
   it "user is unable to access" do
     sign_out
@@ -37,7 +37,7 @@ describe Rivalry, js: true do
     page.should have_content "Votes"
   end
 
-  it "should allow the deletion of a rivalry" do
+  it "should allow the deletion of a rivalry", js: true do
     visit admin_rivalries_path
     count = Rivalry.count
     within("ul li:first") { click_on "Delete" }
@@ -47,7 +47,7 @@ describe Rivalry, js: true do
     Rivalry.count.should == count - 1
   end
 
-  it "should allow the ability to vote for a rivalry_character" do
+  it "should allow the ability to vote for a rivalry_character", js: true do
     rivalry = Factory(:pair_rivalry)
     visit admin_rivalries_path
 

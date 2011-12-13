@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe 'admin page', js: true do
+describe 'admin page' do
   let(:user) { users(:admin) }
-  it 'allows login' do
+  it 'allows login', js: true do
     visit admin_index_path
     current_path.should_not == admin_index_path
 

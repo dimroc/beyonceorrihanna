@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Character, js: true do
+describe Character do
   it "user can see the list of characters" do
     visit characters_path
     Character.find_each do |character|
@@ -8,7 +8,7 @@ describe Character, js: true do
     end
   end
 
-  it "user can see a character" do
+  it "user can see a character", js: true do
     character = characters(:rihanna)
     visit character_path character
     page.should have_content character.name

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Character, js: true do
+describe Character do
   before { sign_in_as_admin }
   describe 'ADMIN GET /index' do
     it "should return success" do
