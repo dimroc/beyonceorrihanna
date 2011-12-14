@@ -1,8 +1,10 @@
-class Beyonceorrihanna.Character extends Batman.Model
-#  @storageKey: 'characters'
+#= require batman/models/model
+
+class Beyonceorrihanna.Character extends Beyonceorrihanna.Model
+  @storageKey: 'characters'
+  @encode 'id', 'name', 'caption', 'image_url', 'twitter_tags', 'youtube_id'
   @persist Batman.RailsStorage
 
-#  @encode 'id', 'name', 'caption', 'image_url', 'twitter_tags', 'youtube_id'
 #
 #  @access 'twitter_tag_list', -> (@get 'twitter_tags').split(',')
 

@@ -1,0 +1,1 @@
+class Beyonceorrihanna.Model extends Batman.Model

@@ -1,5 +1,14 @@
-%section
-  %p
-    Hello World
+%p#flashnotice{data: {showif: "Beyonceorrihanna.flash.success.length"}, class: ["alert-message success"]}
+  %a{class: "close", href: "#", onclick: "$('#flashnotice').hide(); return false"}
+    x
+  %span{data: {bind: "Beyonceorrihanna.flash.success"}}
 
-= javascript_include_tag 'application'
+%p#flashwarning{data: {showif: "Beyonceorrihanna.flash.error.length"}, class: ["alert-message error"]}
+  %a{class: "close", href: "#", onclick: "$('#flashwarning').hide(); return false"}
+    x
+  %span{data: {bind: "Beyonceorrihanna.flash.error"}}
+
+%div{data: {yield: "main"}}
+
+%footer
+  %p &copy; Beyonce Or Rihanna #{Time.now.year}

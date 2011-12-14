@@ -1,6 +1,8 @@
-%ul#characters
-  %li{data: {:"foreach-character" => "Character.all", mixin: "animation"}}
-    %a{data: {route: "character", bind: "character.name"}} name will go here
+%ul
+  %li{data: {:"foreach-character" => "characters", mixin: "animation"}}
+    %a{data: {bind: "character.name"}} name will go here
+    %span :
+    %span{data: {bind: "character.caption"}}
   %li
     %span{data: {bind: "characters.length"}}
-    %span{data: {bind: "'character' | pluralize products.length"}}
+    %span{data: {bind: "'character' | pluralize 'character', characters.length"}}
