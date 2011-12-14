@@ -57,6 +57,7 @@ group :development, :test do
   gem "spork", "~> 0.9.0.rc9", require: false
   gem 'database_cleaner'
   gem 'fssm'
+  gem 'rb-fsevent'
 end
 
 group :production, :staging do
