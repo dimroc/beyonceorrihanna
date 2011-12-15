@@ -5,6 +5,15 @@ class Rivalry < ActiveRecord::Base
 
   scope :random , order("random()")
 
+  class << self
+    def from_characters(character_list)
+      return unless character_list.present?
+      rivalry = Rivalry.create
+      character_list.each { |character| RivalryCharacter.create(rivalry: rivalry, character: character) }
+      rivalry.reload
+    end
+  end
+
   def to_s
     rval = ""
     characters.each_with_index do |character, index|
