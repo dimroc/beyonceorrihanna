@@ -3,7 +3,8 @@
   - @rivalry.rivalry_characters.each_with_index do |rivalry_character, index|
     %section.entry
       = render "characters/character", rivalry_character: rivalry_character, vote: @vote
-      %h3 Votes: #{rivalry_character.votes_count}
+      %h3 Votes:
+      %span #{rivalry_character.votes_count}
     - if index < @rivalry.rivalry_characters.length - 1
       .versus
         VS

@@ -4,6 +4,10 @@ body.rivalries.show {
     @include float-left;
   }
 
+  h3 {
+    @include inline-block;
+  }
+
   .versus {
     @include float-left;
     height: 200px;

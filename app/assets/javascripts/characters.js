@@ -15,6 +15,8 @@ $(function () {
                 .addClass('disabled');
             $("body.rivalries.show section.rivalry_character_" + id)
                 .addClass("voted");
+            $vote_display = $("body.rivalries.show section.rivalry_character_" + id).siblings("span");
+            $vote_display.text(parseInt($vote_display.text()) + 1);
           });
     }
 
