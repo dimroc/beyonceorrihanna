@@ -7,6 +7,8 @@ class RivalryCharacter < ActiveRecord::Base
   validates_presence_of :character_id
   validates_uniqueness_of :character_id, scope: :rivalry_id
 
+  scope :ordered, order("id")
+
   def vote!(ip)
     Vote.create(rivalry_character: self, ip: ip)
   end
