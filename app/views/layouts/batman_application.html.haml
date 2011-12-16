@@ -10,18 +10,5 @@
       try{Typekit.load();}catch(e){}
     = csrf_meta_tag
   %body.bp{class: [@_controller.controller_name, @_controller.action_name] }
-    .header
-      - if signed_in?
-        = link_to "Sign out", sign_out_path, method: :delete
-      - else
-        = link_to "Sign in", sign_in_path
-
-      - if signed_in? && current_user.try(:admin)
-        = link_to "Admin", admin_index_path
-
-    - flash.each do |key, value|
-      %div{class: ["flash", key].join(" ")}
-        = value
-
     #container
       = yield
