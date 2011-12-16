@@ -1,6 +1,6 @@
 %ul
   %li{data: {:"foreach-character" => "characters", mixin: "animation"}}
-    %a{data: {bind: "character.name"}} name will go here
+    %a{data: {bind: "character.name", route: "character"}} name will go here
     %span :
     %span{data: {bind: "character.caption"}}
   %li
