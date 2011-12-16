@@ -16,5 +16,5 @@
                              image_url: "http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Beyonce.jpg/414px-Beyonce.jpg",
                              twitter_tags: "@beyonce")
 
-  Rivalry.from_characters([rihanna, beyonce])
+  Rivalry.from_characters([beyonce, rihanna])
 end
