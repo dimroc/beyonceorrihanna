@@ -7,6 +7,19 @@ describe RivalryCharacter do
     it { should have_many :votes }
   end
 
+  describe "scopes" do
+    context "ordered" do
+      subject { rivalry.rivalry_characters.ordered }
+      let(:rivalry) { Factory(:rivalry) }
+      let(:rivalry_character_list) do
+        t = []
+        4.times { t << Factory(:rivalry_character, rivalry: rivalry) }
+        t
+      end
+      it { should =~ rivalry_character_list }
+    end
+  end
+
   describe "validations" do
     it { should validate_presence_of :character_id }
     it { should validate_presence_of :rivalry_id }
