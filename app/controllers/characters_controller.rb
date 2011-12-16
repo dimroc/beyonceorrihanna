@@ -6,6 +6,13 @@ class CharactersController < ApplicationController
   end
 
   def show
-    @character = Character.find_by_slug(params[:id])
+    begin
+      id = Integer(params[:id])
+      @character = Character.find(id)
+    rescue ArgumentError
+      @character = Character.find_by_slug(params[:id])
+    end
+
+    respond_with @character
   end
 end

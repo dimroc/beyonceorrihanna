@@ -9,5 +9,6 @@
 //= require underscore
 //= require swfobject
 //= require ICanHaz
+//= require pretty
 
 //= require_directory .

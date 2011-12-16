@@ -2,7 +2,12 @@
 // All this logic will automatically be available in application.js.
 
 // Global dependencies
+//= require jquery
+//= require jquery_ujs
 //= require underscore
+//= require swfobject
+//= require ICanHaz
+//= require pretty
 
 // Batman.js and its adapters
 //= require batman/batman

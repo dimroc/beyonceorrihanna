@@ -1,0 +1,25 @@
+%header.title
+  %h1{data: {bind: "character.name | capitalize"}}
+  %h2
+    "
+    %span{data: {bind: "character.caption"}}
+    "
+%img{data: {:"bind-src" => "character.image_url"}}
+
+.ytholder
+  .ytapiplayer{id: 'ytapiplayer', data: {:"bind-data-youtube_url" => "character.youtube_url", mixin: "youtube"}}
+
+%header.twitter
+  .left
+    %span Twitter:
+    %span{data: {bind: "character.twitter_tags"}}
+  .right
+    %span Followers:
+    %span{data: {bind: "character.twitter_followers_count"}}
+
+%ul
+  %li{data: {:"foreach-tweet" => "character.tweets"}}
+    .tweet
+      %img{data: {:"bind-src" => "tweet.user.profile_image_url"}}
+      .tweet_text{data: {bind: "tweet.text | autolink"}}
+    .tweet_date{data: {bind: "tweet.created_at | prettyDate"}}

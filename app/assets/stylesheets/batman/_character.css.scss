@@ -1,0 +1,78 @@
+article.batman {
+  article.show {
+    padding: 50px;
+  }
+
+  section.character {
+    @include box-shadow(0px 10px 20px 5px #333);
+    width: 500px;
+    padding: 5px 30px 5px 30px;
+
+    > img {
+      margin-bottom: 10px;
+      height: 300px;
+    }
+
+    .ytholder {
+      margin-left: 23px;
+      margin-bottom: 20px;
+    }
+
+    header.title {
+      @include float-left;
+      margin-right: 10px;
+      h1 {
+        font: 30px/10px anivers, nimbus-sans;
+        font-weight: bold;
+      }
+
+      h2 {
+        font: 20px anivers, nimbus-sans;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      width: 400px;
+      li {
+        padding: 5px 0px 5px 0px;
+        border-bottom: 1px #999 solid;
+        background-color: #f5f5dc;
+        @include clearfix;
+
+        .tweet {
+          height: 48px;
+          img {
+            @include float-left;
+            margin-right: 10px;
+            margin-bottom: 0px;
+          }
+
+          .tweet_text {
+            font-size: 14px;
+          }
+        }
+
+        .tweet_date {
+          @include inline-block;
+          margin: 5px;
+          color: #191970;
+          font-size: 12px;
+        }
+      }
+    }
+
+    header.twitter {
+      @include clearfix;
+      font: 20px anivers, nimbus-sans;
+
+      .left {
+        @include float-left;
+      }
+
+      .right {
+        @include float-right;
+      }
+    }
+  }
+}
