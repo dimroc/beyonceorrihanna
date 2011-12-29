@@ -5,6 +5,7 @@ class Beyonceorrihanna.Character extends Beyonceorrihanna.Model
   @primaryKey: 'slug'
   @encode 'id', 'name', 'slug', 'caption', 'image_url', 'twitter_tags', 'youtube_id'
   @persist Batman.RailsStorage
+#  @url = "/api/character_adapters"
 
   @accessor 'youtube_url'
     get: ->

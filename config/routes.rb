@@ -50,11 +50,10 @@ Beyonceorrihanna::Application.routes.draw do
     resources :rivalries, except: [:edit, :update]
     resources :characters
   end
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+
+  namespace :api do
+    resources :character_adapters, only: [:index, :show]
+  end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
