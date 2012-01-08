@@ -1,10 +1,8 @@
 window.Beyonceorrihanna = class Beyonceorrihanna extends Batman.App
-
   Batman.View::prefix = 'assets/batman/views'
 
   @resources 'characters'
-  @root 'characters#index'
-#  @route '/controller/:id', 'controller#show', resource: 'model', action: 'show'
+  @root 'home#index'
 
   @on 'run', ->
     console?.log "Running ...."

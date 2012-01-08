@@ -5,8 +5,10 @@ article.batman {
 
   section.character {
     @include box-shadow(0px 10px 20px 5px #333);
+    @include inline-block;
     width: 500px;
     padding: 5px 30px 5px 30px;
+    vertical-align: top;
 
     > img {
       margin-bottom: 10px;
