@@ -7,6 +7,6 @@ class CharacterAdapter < RivalryCharacter
 
     rivalry_hash = JSON.parse(rivalry.to_json)
     rivalry_hash = Hash[rivalry_hash.map { |k, v| ["rivalry_" + k, v] }]
-    character_hash.merge(rivalry_hash).to_json
+    character_hash.merge(rivalry_hash).merge({id: id}).to_json
   end
 end

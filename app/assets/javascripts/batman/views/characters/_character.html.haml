@@ -1,10 +1,10 @@
 %header.title
-  %h1{data: {bind: "character.name | capitalize"}}
+  %h1{data: {bind: "character.character_name | capitalize"}}
   %h2
     "
-    %span{data: {bind: "character.caption"}}
+    %span{data: {bind: "character.character_caption"}}
     "
-%img{data: {:"bind-src" => "character.image_url"}}
+%img{data: {:"bind-src" => "character.character_image_url"}}
 
 .ytholder
   .ytapiplayer{id: 'ytapiplayer', data: {:"bind-data-youtube_url" => "character.youtube_url", mixin: "youtube"}}
@@ -12,7 +12,7 @@
 %header.twitter
   .left
     %span Twitter:
-    %span{data: {bind: "character.twitter_tags"}}
+    %span{data: {bind: "character.character_twitter_tags"}}
   .right
     %span Followers:
     %span{data: {bind: "character.twitter_followers_count"}}

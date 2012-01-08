@@ -1,19 +1,19 @@
 <header class='title'>
-  <h1 data-bind='character.name | capitalize'></h1>
+  <h1 data-bind='character.character_name | capitalize'></h1>
   <h2>
     "
-    <span data-bind='character.caption'></span>
+    <span data-bind='character.character_caption'></span>
     "
   </h2>
 </header>
-<img data-bind-src='character.image_url' />
+<img data-bind-src='character.character_image_url' />
 <div class='ytholder'>
   <div class='ytapiplayer' data-bind-data-youtube_url='character.youtube_url' data-mixin='youtube' id='ytapiplayer'></div>
 </div>
 <header class='twitter'>
   <div class='left'>
     <span>Twitter:</span>
-    <span data-bind='character.twitter_tags'></span>
+    <span data-bind='character.character_twitter_tags'></span>
   </div>
   <div class='right'>
     <span>Followers:</span>

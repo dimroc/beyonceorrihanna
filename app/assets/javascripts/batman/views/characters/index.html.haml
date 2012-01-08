@@ -1,8 +1,8 @@
 %ul
   %li{data: {:"foreach-character" => "characters"}}
-    %a{data: {bind: "character.name", route: "character"}} name will go here
+    %a{data: {bind: "character.character_name", route: "character"}} name will go here
     %span :
-    %span{data: {bind: "character.caption"}}
+    %span{data: {bind: "character.character_caption"}}
   %li
     %span{data: {bind: "characters.length"}}
     %span{data: {bind: "'character' | pluralize 'character', characters.length"}}

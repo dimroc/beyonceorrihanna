@@ -3,7 +3,8 @@ class Api::CharacterAdaptersController < ApplicationController
   respond_to :json, :js
 
   def index
-    respond_with CharacterAdapter.all
+    rval = CharacterAdapter.all.map { |c| JSON.parse c.to_json }
+    respond_with rval
   end
 
   def show
