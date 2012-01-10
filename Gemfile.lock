@@ -94,6 +94,10 @@ GEM
       activesupport (>= 2)
     friendly_id (4.0.0.beta14)
     fssm (0.2.7)
+    fuubar (0.0.6)
+      rspec (~> 2.0)
+      rspec-instafail (~> 0.1.8)
+      ruby-progressbar (~> 0.0.10)
     growl_notify (0.0.3)
       rb-appscript
     guard (0.8.8)
@@ -195,6 +199,7 @@ GEM
     rspec-core (2.7.1)
     rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
+    rspec-instafail (0.1.9)
     rspec-mocks (2.7.0)
     rspec-rails (2.7.0)
       actionpack (~> 3.0)
@@ -209,6 +214,7 @@ GEM
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
       ruby-debug-base19 (>= 0.11.19)
+    ruby-progressbar (0.0.10)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
     rubyzip (0.9.5)
@@ -278,6 +284,7 @@ DEPENDENCIES
   fixture_builder
   friendly_id (~> 4.0.0.beta14)
   fssm
+  fuubar
   growl_notify
   guard
   guard-livereload

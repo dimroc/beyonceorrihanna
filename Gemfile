@@ -58,6 +58,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'fssm'
   gem 'rb-fsevent'
+  gem 'fuubar'
 end
 
 group :production, :staging do
