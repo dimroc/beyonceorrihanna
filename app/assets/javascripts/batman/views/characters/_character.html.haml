@@ -4,6 +4,10 @@
     "
     %span{data: {bind: "character.character_caption"}}
     "
+%form{data: {:"event-submit" => "controllers.characters.vote", "bind-data-rivalry_character_id" => "character.id"}}
+  %button{type: "submit", class: "punch"}
+    VOTE
+
 %img{data: {:"bind-src" => "character.character_image_url"}}
 
 .ytholder

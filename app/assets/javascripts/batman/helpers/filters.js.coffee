@@ -1,4 +1,11 @@
 Batman.mixin Batman.Filters,
+  suffix: (lhs, rhs) ->
+    lhs + rhs
+
+  vote_character_path: (character) ->
+    throw "argument is not a character" unless character instanceof Beyonceorrihanna.Character
+    "#!/characters/#{character.id}/vote"
+
   displayPrice: (ad) ->
     return undefined if typeof ad is 'undefined'
     switch ad.get('sale_type')

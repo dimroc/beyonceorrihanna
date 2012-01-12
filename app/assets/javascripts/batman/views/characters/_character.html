@@ -6,6 +6,11 @@
     "
   </h2>
 </header>
+<form data-bind-data-rivalry_character_id='character.id' data-event-submit='controllers.characters.vote'>
+  <button class='punch' type='submit'>
+    VOTE
+  </button>
+</form>
 <img data-bind-src='character.character_image_url' />
 <div class='ytholder'>
   <div class='ytapiplayer' data-bind-data-youtube_url='character.youtube_url' data-mixin='youtube' id='ytapiplayer'></div>
