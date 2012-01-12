@@ -11,7 +11,7 @@
 %img{data: {:"bind-src" => "character.character_image_url"}}
 
 .ytholder
-  .ytapiplayer{id: 'ytapiplayer', data: {:"bind-data-youtube_url" => "character.youtube_url", mixin: "youtube"}}
+  .ytapiplayer{data: {:"bind-data-youtube_url" => "character.youtube_url", :"bind-id" => "'ytapiplayer' | suffix character.id", mixin: "youtube"}}
 
 %header.twitter
   .left

@@ -13,7 +13,7 @@
 </form>
 <img data-bind-src='character.character_image_url' />
 <div class='ytholder'>
-  <div class='ytapiplayer' data-bind-data-youtube_url='character.youtube_url' data-mixin='youtube' id='ytapiplayer'></div>
+  <div class='ytapiplayer' data-bind-data-youtube_url='character.youtube_url' data-bind-id="'ytapiplayer' | suffix character.id" data-mixin='youtube'></div>
 </div>
 <header class='twitter'>
   <div class='left'>
