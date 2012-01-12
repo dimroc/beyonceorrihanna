@@ -4,6 +4,7 @@
     "
     %span{data: {bind: "character.character_caption"}}
     "
+  %h3{class: "votes", data: {bind: "character.votes_count"}}
 %form{data: {:"event-submit" => "controllers.characters.vote", "bind-data-rivalry_character_id" => "character.id"}}
   %button{type: "submit", class: "punch"}
     VOTE

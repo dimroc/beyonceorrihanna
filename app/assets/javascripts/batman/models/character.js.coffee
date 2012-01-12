@@ -10,7 +10,8 @@ class Beyonceorrihanna.Character extends Beyonceorrihanna.Model
       'character_image_url',
       'character_twitter_tags',
       'character_youtube_id',
-      'rivalry_id'
+      'rivalry_id',
+      'votes_count'
 
   @persist Batman.RailsStorage
   @url = "/api/character_adapters"

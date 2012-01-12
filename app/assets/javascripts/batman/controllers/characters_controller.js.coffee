@@ -33,6 +33,9 @@ class Beyonceorrihanna.CharactersController extends Batman.Controller
       $("section.character##{rivalry_character_id}")
       .addClass("voted");
 
+      $("section.character##{rivalry_character_id} .votes")
+      .text(parseInt($("section.character##{rivalry_character_id} .votes").text()) + 1)
+
     @render false
 
 
