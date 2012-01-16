@@ -1,30 +1,32 @@
 %header.title
-  %h1{data: {bind: "character.character_name | capitalize"}}
-  %h2
+  %form{data: {:"event-submit" => "controllers.characters.vote", "bind-data-rivalry_character_id" => "character.id"}}
+    %button{type: "submit"}
+      %span{class: "name", data: {bind: "character | voted_text | suffix ' For: ' | suffix character.character_name | capitalize"}}
+      %span{class: "votes", data: {bind: "'Votes: ' | suffix character.votes_count"}}
+
+.info
+  .caption
     "
     %span{data: {bind: "character.character_caption"}}
     "
-  %h3{class: "votes", data: {bind: "character.votes_count"}}
-%form{data: {:"event-submit" => "controllers.characters.vote", "bind-data-rivalry_character_id" => "character.id"}}
-  %button{type: "submit", class: "punch"}
-    VOTE
 
-%img{data: {:"bind-src" => "character.character_image_url"}}
+  %img{data: {:"bind-src" => "character.character_image_url"}}
 
 .ytholder
   .ytapiplayer{data: {:"bind-data-youtube_url" => "character.youtube_url", :"bind-id" => "'ytapiplayer' | suffix character.id", mixin: "youtube"}}
 
-%header.twitter
-  .left
-    %span Twitter:
-    %span{data: {bind: "character.character_twitter_tags"}}
-  .right
-    %span Followers:
-    %span{data: {bind: "character.twitter_followers_count"}}
+.twitter
+  %header
+    .left
+      %span Twitter:
+      %span{data: {bind: "character.character_twitter_tags"}}
+    .right
+      %span Followers:
+      %span{data: {bind: "character.twitter_followers_count"}}
 
-%ul
-  %li{data: {:"foreach-tweet" => "character.tweets"}}
-    .tweet
-      %img{data: {:"bind-src" => "tweet.user.profile_image_url"}}
-      .tweet_text{data: {bind: "tweet.text | autolink"}}
-    .tweet_date{data: {bind: "tweet.created_at | prettyDate"}}
+  %ul
+    %li{data: {:"foreach-tweet" => "character.tweets"}}
+      .tweet
+        %img{data: {:"bind-src" => "tweet.user.profile_image_url"}}
+        .tweet_text{data: {bind: "tweet.text | autolink"}}
+      .tweet_date{data: {bind: "tweet.created_at | prettyDate"}}

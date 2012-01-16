@@ -1,23 +1,75 @@
+$border-color: #dcdcdc;
+
+@mixin horizontal-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 article.batman {
-  article.show {
-    padding: 50px;
-  }
-
   section.character {
-    @include box-shadow(0px 10px 20px 5px #333);
     @include inline-block;
-    width: 500px;
-    padding: 5px 30px 5px 30px;
+    width: 49%;
     vertical-align: top;
+    border-left: 1px $border-color solid;
+    border-right: 1px $border-color solid;
 
-    > img {
-      margin-bottom: 10px;
-      height: 300px;
+    header.title {
+      @include clearfix;
+      margin-bottom: 50px;
+
+      border-top: 1px $border-color solid;
+      border-bottom: 1px $border-color solid;
+
+      button {
+        .name {
+          @include float-left;
+          font: 20px/10px anivers, nimbus-sans;
+          margin-left: 20px;
+        }
+
+        .votes {
+          @include float-right;
+          font-size: 14px;
+        }
+
+        vertical-align: middle;
+        background: transparent;
+        border: none;
+        border-left: 1px $border-color solid;
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+          background: #f5f5dc;
+        }
+      }
+    }
+
+    &:first-of-type {
+      border-right: 0;
+    }
+
+    .info {
+      .caption {
+        font: 20px/10px anivers, nimbus-sans;
+        @include horizontal-center;
+      }
+
+      > img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
     }
 
     .ytholder {
-      margin-left: 23px;
+      @include box-shadow(0px 10px 20px 5px #333);
       margin-bottom: 20px;
+      height: 224px;
+      @include horizontal-center;
+      width: 398px;
     }
 
     &.voted {
@@ -40,60 +92,52 @@ article.batman {
       }
     }
 
-    header.title {
-      @include float-left;
-      margin-right: 10px;
-      h1 {
-        font: 30px/10px anivers, nimbus-sans;
-        font-weight: bold;
-      }
-
-      h2 {
-        font: 20px anivers, nimbus-sans;
-      }
-    }
-
-    ul {
-      list-style-type: none;
-      width: 400px;
-      li {
-        padding: 5px 0px 5px 0px;
-        border-bottom: 1px #999 solid;
-        background-color: #f5f5dc;
+    .twitter {
+      header {
         @include clearfix;
+        margin-bottom: 20px;
+        font: 20px anivers, nimbus-sans;
 
-        .tweet {
-          height: 48px;
-          img {
-            @include float-left;
-            margin-right: 10px;
-            margin-bottom: 0px;
-          }
-
-          .tweet_text {
-            font-size: 14px;
-          }
+        .left {
+          @include float-left;
         }
 
-        .tweet_date {
-          @include inline-block;
-          margin: 5px;
-          color: #191970;
-          font-size: 12px;
+        .right {
+          @include float-right;
         }
       }
-    }
 
-    header.twitter {
-      @include clearfix;
-      font: 20px anivers, nimbus-sans;
+      ul {
+        list-style-type: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        li {
+          /*padding: 5px 0px 5px 0px;*/
+          border-bottom: 1px #999 solid;
+          background-color: #f5f5dc;
+          @include clearfix;
 
-      .left {
-        @include float-left;
-      }
+          .tweet {
+            height: 48px;
+            img {
+              @include float-left;
+              margin-right: 10px;
+              margin-bottom: 0px;
+            }
 
-      .right {
-        @include float-right;
+            .tweet_text {
+              font-size: 14px;
+            }
+          }
+
+          .tweet_date {
+            @include inline-block;
+            margin: 5px;
+            color: #191970;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
