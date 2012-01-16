@@ -1,6 +1,10 @@
 class CharacterAdapter < RivalryCharacter
   delegate :id, :name, :slug, :caption, :image_url, :twitter_tags, :youtube_id, prefix: true, to: :character
 
+  def voted?(ip)
+    Vote.where(rivalry_character_id: id, ip: ip).first.present?
+  end
+
   def to_json(options = {})
     character_hash = JSON.parse(character.to_json)
     character_hash = Hash[character_hash.map { |k, v| ["character_" + k, v] }]

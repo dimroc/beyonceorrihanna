@@ -11,6 +11,7 @@ class Beyonceorrihanna.Character extends Beyonceorrihanna.Model
       'character_twitter_tags',
       'character_youtube_id',
       'rivalry_id',
+      'voted?',
       'votes_count'
 
   @persist Batman.RailsStorage

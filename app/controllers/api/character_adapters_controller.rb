@@ -3,7 +3,7 @@ class Api::CharacterAdaptersController < ApplicationController
   respond_to :json, :js
 
   def index
-    rval = CharacterAdapter.all.map { |c| JSON.parse c.to_json }
+    rval = CharacterAdapter.order(:id).all.map { |c| JSON.parse(c.to_json).merge({"voted?" => c.voted?(request.remote_ip)}) }
     respond_with rval
   end
 
