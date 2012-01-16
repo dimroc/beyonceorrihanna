@@ -36,13 +36,17 @@ article.batman {
         vertical-align: middle;
         background: transparent;
         border: none;
-        border-left: 1px $border-color solid;
         height: 50px;
         width: 100%;
         cursor: pointer;
 
         &:hover {
           background: #f5f5dc;
+        }
+
+        &:hover.disabled {
+          background: transparent;
+          cursor: default;
         }
       }
     }

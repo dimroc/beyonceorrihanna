@@ -7,10 +7,12 @@ class Beyonceorrihanna.CharactersController extends Batman.Controller
   @set_voted = (rivalry_character_id) ->
     $("section.character##{rivalry_character_id} form button")
     .data('enabled', false)
-    .addClass('disabled')
 
     $("section.character##{rivalry_character_id}")
     .addClass("voted");
+
+    $("section.character form button")
+    .addClass('disabled')
 
   index: ->
     Beyonceorrihanna.Character.load (err) -> throw err if err
