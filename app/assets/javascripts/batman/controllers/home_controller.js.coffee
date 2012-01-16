@@ -1,6 +1,12 @@
 class Beyonceorrihanna.HomeController extends Batman.Controller
   index: ->
-    Beyonceorrihanna.Character.load (err) -> throw err if err
+    characters = Beyonceorrihanna.Character.get('all').indexedBy('rivalry_id').get(1)
 
-    # We only get first rivalry!
-    @set 'characters', Beyonceorrihanna.Character.get('all').indexedBy('rivalry_id').get(1)
+    setTimeout( ->
+      characters.toArray().forEach((character) ->
+        if character.get 'voted?'
+          Beyonceorrihanna.CharactersController.set_voted character.id
+      )
+    , 1000)
+
+    @set 'characters', characters

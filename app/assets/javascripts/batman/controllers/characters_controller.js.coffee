@@ -4,6 +4,15 @@ class Beyonceorrihanna.CharactersController extends Batman.Controller
 
   characters: null
 
+  @set_voted = (rivalry_character_id) ->
+    $("section.character##{rivalry_character_id} form button")
+    .data('enabled', false)
+    .text('Voted')
+    .addClass('disabled')
+
+    $("section.character##{rivalry_character_id}")
+    .addClass("voted");
+
   index: ->
     Beyonceorrihanna.Character.load (err) -> throw err if err
     @set 'characters', Beyonceorrihanna.Character.get('all')
@@ -18,24 +27,13 @@ class Beyonceorrihanna.CharactersController extends Batman.Controller
     rivalry_character_id = $(form).data("rivalry_character_id")
     return unless rivalry_character_id
     url = "/votes?rivalry_character_id=#{rivalry_character_id}"
-    console.debug "attempting to vote to #{url}"
 
     $.ajax(
       type: 'POST'
       url: url)
     .done ->
-      console.debug "COMPLETED VOTE!"
-      $("section.character##{rivalry_character_id} form button")
-      .data('enabled', false)
-      .text('Voted')
-      .addClass('disabled')
-
-      $("section.character##{rivalry_character_id}")
-      .addClass("voted");
-
+      Beyonceorrihanna.CharactersController.set_voted(rivalry_character_id)
       $("section.character##{rivalry_character_id} .votes")
       .text(parseInt($("section.character##{rivalry_character_id} .votes").text()) + 1)
 
     @render false
-
-
