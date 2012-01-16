@@ -59,6 +59,7 @@ group :development, :test do
   gem 'fssm'
   gem 'rb-fsevent'
   gem 'fuubar'
+  gem 'awesome_print'
 end
 
 group :production, :staging do
