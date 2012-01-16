@@ -1,4 +1,10 @@
 Batman.mixin Batman.Filters,
+  voted_text: (character) ->
+    if character.get 'voted?'
+      'Voted'
+    else
+      'Vote'
+
   suffix: (lhs, rhs) ->
     lhs + rhs
 
