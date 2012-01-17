@@ -34,7 +34,7 @@ class Beyonceorrihanna.CharactersController extends Batman.Controller
       url: url)
     .done ->
       Beyonceorrihanna.CharactersController.set_voted(rivalry_character_id)
-      $("section.character##{rivalry_character_id} .votes")
-      .text(parseInt($("section.character##{rivalry_character_id} .votes").text()) + 1)
+      character = Beyonceorrihanna.Character.find rivalry_character_id, (err) -> throw err if err
+      character.set 'votes_count', character.get('votes_count') + 1
 
     @render false
