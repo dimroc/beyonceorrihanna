@@ -10,5 +10,6 @@
 //= require swfobject
 //= require ICanHaz
 //= require pretty
+//= require jquery.fixedHeaderTable
 
 //= require_directory .
