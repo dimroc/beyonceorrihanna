@@ -42,6 +42,8 @@ group :development do
   gem 'kumade'
   gem 'ruby-debug19', require: false
   gem 'rails_best_practices'
+  gem 'wirb'
+  gem 'hirb'
 end
 
 group :development, :test do
